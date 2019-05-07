@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <h2>Loops</h2>
+        <h3>for</h3>
+        <script>
+        var i;
+        for (i=0; i < 5; i++){
+            document.write("Loop number " + i)
+            document.write("<br />")
+        }
+        </script>
+        
+        <h3>while</h3>
+        <p id="whileDemo"></p>
+        <script>
+            var text = "";
+            var jump = 0;
+            while (jump <= 4){
+                text += "<br>I've jumped " + jump + " times!";
+                jump++;
+            }
+            document.getElementById("whileDemo").innerHTML = text;
+        </script>
+        
+        <h3>do...while</h3>
+    </body>
+</html>
