@@ -12,8 +12,8 @@
         <script>
         var i;
         for (i=0; i < 5; i++){
-            document.write("Loop number " + i)
-            document.write("<br />")
+            document.write("Loop number " + i);
+            document.write("<br />");
         }
         </script>
         
@@ -29,6 +29,15 @@
             document.getElementById("whileDemo").innerHTML = text;
         </script>
         
-        <h3>do...while</h3>
+        <h2>Conditional Statements</h2>
+        <h3>if/else</h3>
+            <script>
+                var name = "Rachel";
+                if(name.length >= 10){
+                    document.write(name + ", your name is long!");
+                } else {
+                    document.write(name + ", your name has an average length.")
+                }
+            </script>
     </body>
 </html>
