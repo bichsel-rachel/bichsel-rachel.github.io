@@ -11,7 +11,7 @@
         <h3>for</h3>
         <script>
         var i;
-        for (i=0; i < 5; i++){
+        for (i=0; i < 2; i++){
             document.write("Loop number " + i);
             document.write("<br />");
         }
@@ -22,7 +22,7 @@
         <script>
             var text = "";
             var jump = 0;
-            while (jump <= 4){
+            while (jump <= 8){
                 text += "<br>I've jumped " + jump + " times!";
                 jump++;
             }
@@ -32,7 +32,7 @@
         <h2>Conditional Statements</h2>
         <h3>if/else</h3>
             <script>
-                var name = "Rachel";
+                var name = "RachelLalaala";
                 if(name.length >= 10){
                     document.write(name + ", your name is long!");
                 } else {
@@ -41,15 +41,60 @@
             </script>
         
         <h2>Functions</h2>
-        <h3></h3>
+        <p id="areaEx"></p>
             <script>
-                
+                function circleArea(){
+                    var r = 7;
+                    var area = 2 * 3.14 * r;
+                    return "Area = " + area;
+                }
+                document.getElementById("areaEx").innerHTML = circleArea();
+            </script>
+        
+        <h3>With Parameters</h3>
+        
+        <p>Click on certian button to find the area of the circle with specified radius.</p>
+        <p id="para"></p>
+        <button onclick="circleArea(6);">Radius =  6</button>
+        <button onclick="circleArea(2.52);">Radius =  2.52</button>
+        <button onclick="circleArea(24);">Radius =  24</button>
+        
+        <script>
+                function circleArea(radius){
+                    var area = 3.14 * (radius * radius);
+                    document.getElementById("para").innerHTML = "Radius = " + radius + "<br /> Area = " + area;;
+                }
+            
             </script>
         
         <h2>Arrays</h2>
-        <h3></h3>
             <script>
+              var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple'];
+                  
+                document.write(colors);
+                document.write('<br />');
+                document.write(colors[2]);
+                document.write('<br />');
+                document.write(colors.length);
+                document.write('<br />');
+                document.write(colors[colors.length - 1]);
+            </script>
+        
+        <h3>Associative</h3>
+        <p>Number of words in book:</p>
+        
+            <script>
+                var book = {'happy': 45, 'sad': 18, 'run': 88};
                 
+                document.write("happy is said " + book.happy + " times");
+                document.write('<br />');
+                document.write(book['happy']);
+                document.write('<br />');
+                
+                for(var index in user) {
+                    document.write(index + " : " + user[index] + "<br />");
+                }
+            
             </script>
     </body>
 </html>
