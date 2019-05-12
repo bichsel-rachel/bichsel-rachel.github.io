@@ -3,18 +3,151 @@
     <head>
     <meta charset="utf-8">
     <title>HTML5 Tags</title>
+    <script type="text/javascript" href="canvas.js async"></script>
 
 </head>
 
 <body>
-    <h1>HTML5 Tags</h1>
+    <h1>Video Tag</h1>
     <h2>Syntax</h2>
     <p>
-        &lt;script&gt; <br /> var i; for (i=0; i &lt; 2; i++){<br /> document.write(&quot;Loop number &quot; + i);<br /> document.write(&quot;&lt;br /&gt;&quot;); }
-        <br /> &lt;/script&gt;
+        &lt;video src="big_buck_bunny.mp4" controls&gt;&lt;/video&gt;
     </p>
+    <p>Must have controls attribute or video is not playable.</p>
+    <p>Text between video tags will only play if video formats don't work in browser.</p>
+    <video width="450" src="big_buck_bunny.mp4"></video>
+    <video width="450" src="big_buck_bunny.mp4" controls>Browser does not play video format</video>
+    
+    <h2>Better Format</h2>
+    <p>
+        &lt;video controls&gt;<br />
+        &lt;source  src="big_buck_bunny.mp4" type="vidwo/mp4"&gt;<br />
+        &lt;source  src="big_buck_bunny.ogg" type="video/ogg"&gt;<br />
+        &lt;/video&gt;
+    </p>
+    <p>Three supported video formats for video tag: MP4, WebM, and Ogg. Most browsers support MP4.</p>
+    
+    <p>Below, the video is set to autoplay, loop, and muted.</p>
+    
+    <video width="450" controls autoplay muted loop>
+        <source src="big_buck_bunny.mp4" type="video/mp4">
+        <source src="big_buck_bunny.ogg" type="video/ogg">
+        Browser is too old!
+    </video>
+    
+    <h2>Other Optional Attributes</h2>
+    <ul>
+        <li>autoplay</li>
+        <li>loop</li>
+        <li>muted</li>
+        <li>preload</li>
+        <li>height</li>  
+    </ul>
+    
+    <h1>Audio Tag</h1>
+    
+    <p>The audio tag is very similar to the video tag.</p>
 
-    <video src="big_buck_bunny.mp4"></video>
+    <h2>Syntax:</h2>
+    <p>
+        &lt;audio controls&gt;<br />
+        &lt;source  src="wanted_dead_or_alive.m4a" type="audio/mp4"&gt;<br />
+        &lt;source  src="wanted_dead_or_alive.m4a" type="audio/ogg"&gt;<br />
+        &lt;/audio&gt;
+    </p>
+    
+    <p>Three supported video formats for video tag: MP3, WAV, and OGG. Most browsers support MP4.</p>
+    
+    <audio width="450" controls>
+        <source src="wanted_dead_or_alive.m4a" type="audio/m4a">
+        <source src="wanted_dead_or_alive.m4a" type="audio/mp4">
+        Do not have correct format for browser
+    </audio>
+    <h2>Optional Attributes</h2>
+    <ul>
+        <li>autoplay</li>
+        <li>loop</li>
+        <li>muted</li>
+        <li>preload</li>
+    </ul>
+    
+    <h1>Canvas</h1>
+    <p>The canvas element is used as a blank canvas that can then be drawn on using JavaScript.</p>
+    
+    <p>It is useful because you can draw things on the web page in real time like graphs, graphics, games, and art.</p>
+    
+    <p>Always include a id attribute so you can link the canvas to the Javascript. You can use the width and height attributes to set canvas size. If not, it will use default size.</p>
+    
+    <p>Default size is 300 pixels x 150 pixels</p>
+    
+    <p>Adding a border can make it easer to see.</p>
+    
+    
+    
+    <h2>Syntax:</h2>
+    <p>&lt;canvas width="" height=""&gt; 
+    
+    &lt;/canvas&gt;</p>
+    
+    <canvas id="line" width="200" height="200" style="border:2px solid red;">Sadly, your browser doesn't support HTML5 canvas tag.</canvas><br />
+    
+    <script>
+    var canvas = document.getElementById("line");
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(100, 0);
+    ctx.lineTo(100, 300);
+    ctx.stroke();</script>
+    
+    <h2>Attempt at Spiral</h2>
+    <ul>
+        <li>Set variable to canvas.getContext("2d"); - This is setting to work with 2d forms</li>
+        <li>Start path (ex: ctx.beginPath();)</li>
+        <li>Can set line width and line color (ex: ctx.lineWidth = '5'; ctx.strokeStyle = 'red';</li>
+        <li>Use moveTo to set starting position</li>
+        <li>Use lineTo to set new points to move line</li>
+        <li>Use stroke() to draw</li>
+        <li>End path (ex: ctx.endPath();)</li>
+    </ul>
+   
+    
+    <canvas id="test" width="300" height="250" style="border:2px solid red; background-color: aqua;">Sadly, your browser doesn't support HTML5 canvas tag.</canvas>
+    
+    
+    <script>
+    var canvas = document.getElementById("test");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.lineWidth = "5";
+    ctx.strokeStyle = "red";
+    ctx.moveTo(0, 100);
+    ctx.lineTo(100, 50);
+    ctx.lineTo(200, 50);
+    ctx.lineTo(250, 100);
+    ctx.lineTo(250, 175);
+    ctx.lineTo(200, 215);
+    ctx.lineTo(100, 215);
+    ctx.lineTo(50, 175);
+    ctx.lineTo(50, 115);
+    ctx.lineTo(100, 85);
+    ctx.lineTo(185, 85);
+    ctx.lineTo(220, 115);
+    ctx.lineTo(220, 150);
+    ctx.lineTo(185, 175);
+    ctx.lineTo(110, 175);
+    ctx.lineTo(85, 150);
+    ctx.stroke();
+    ctx.closePath();
+    </script>
+    
+    <h2>Some things you can create with Canvas:</h2>
+    <ul>
+        <li>Arcs and circles</li>
+        <li>Rectangles</li>
+        <li>Gradients and Patterns</li>
+        <li>Text</li>
+        <li>Animations</li>
+    </ul>
+    <a href="https://www.w3resource.com/html5-canvas/html5-canvas-rectangle.php">For Personal Rememberance - Tutorials on Canvas</a>
     
 </body>
 </html>
