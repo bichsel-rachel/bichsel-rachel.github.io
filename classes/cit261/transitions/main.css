@@ -1,0 +1,103 @@
+body {
+    margin-left: 100px;
+}
+
+.container {
+    display: flex;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #800080;
+    margin: 30px;
+}
+
+.square1:hover {
+    transform: scale(1.5);
+    transition: all 300ms;
+}
+
+.square2:hover {
+    transform: scale(1.5);
+    transition: all 5s;
+}
+
+.square3:hover {
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.notrans:hover {
+    transform: rotate(45deg);
+}
+
+.trans:hover {
+    transform: rotate(45deg);
+    transition: all 1s;
+}
+
+h5 {
+    text-align: center;
+}
+
+
+.parallel {
+    width: 50px;
+    height: 25px;
+    transform: skew(20deg);
+    margin-bottom: 5px;
+    background-color: green;
+}
+
+.par1:hover {
+    @extend .parallel;
+    transition: all 2s linear;
+    background-color: red;
+    transform: translateX(200px) skew(20deg);
+}
+
+.par2:hover {
+    @extend .parallel;
+    transition: all 2s ease;
+    background-color: orange;
+    transform: translateX(200px) skew(20deg);
+}
+
+.par3:hover {
+    @extend .parallel;
+    transition: all 2s ease-in;
+    background-color: yellow;
+    transform: translateX(200px) skew(20deg);
+}
+
+.par4:hover {
+    @extend .parallel;
+    transition: all 2s ease-out;
+    background-color: blue;
+    transform: translateX(200px) skew(20deg);
+}
+
+.par5:hover {
+    @extend .parallel;
+    transition: all 2s ease-in-out;
+    transform: translateX(200px) skew(20deg);
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: 30px;
+}
+
+.circle1:hover {
+    transition: all 2s;
+    transform: scaleY(2);
+}
+
+.circle2:hover {
+    transition: all 2s 1s;
+    transform: scaleY(2);
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <title>CSS3 Transitions</title>
+    <script type="text/javascript" href="style.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+    <h1>Transitions</h1>
+    <p>Transitions go hand-in-hand with transforms.</p>
+    <h2>Why we need Transitions</h2>
+    <div class="container">
+        <div>
+            <h5>No Transition</h5>
+            <div class="square notrans"></div>
+        </div>
+        <div>
+            <h5>Transition</h5>
+            <div class="square trans"></div>
+        </div>
+
+    </div>
+    <p>Two things required for transitions:</p>
+    <ul>
+        <li>
+            transition-property
+        </li>
+        <li>
+            transition-duration
+        </li>
+    </ul>
+    <p>transition shorthand:</p>
+    <p>transition: [property][duration][timing-function][delay];</p>
+
+    <h2>transition-property</h2>
+    <ul>
+        <li>Specifies what css property the transition will be applied to.</li>
+        <li>Can do one property or do all properties in rule-set</li>
+    </ul>
+
+    <h2>transition-duration</h2>
+    <ul>
+        <li>Specifies time span of transition</li>
+        <li>Can be in seconds or milliseconds</li>
+    </ul>
+
+    <h3>Example</h3>
+
+    <div class="container">
+        <div>
+            <h5>300 ms</h5>
+            <div class="square square1"></div>
+        </div>
+        <div>
+            <h5>5 seconds</h5>
+            <div class="square square2"></div>
+        </div>
+        <div>
+            <h5>1 second</h5>
+            <div class="square square3"></div>
+        </div>
+    </div>
+
+    <h2>Optional Properties</h2>
+    <h3>transition-timing-function</h3>
+    <p>Define the speed over the duration of the transition.</p>
+    <ul>
+        <li>Default timing is ease</li>
+        <li>Other options are:</li>
+        <ul>
+            <li>linear</li>
+            <li>ease</li>
+            <li>ease-in</li>
+            <li>ease-out</li>
+            <li>ease-in-out</li>
+        </ul>
+    </ul>
+    <h4>Example</h4>
+    <div id="timing">
+        <div class="parallel par1"></div>
+        <div class="parallel par2"></div>
+        <div class="parallel par3"></div>
+        <div class="parallel par4"></div>
+        <div class="parallel par5"></div>
+    </div>
+    <h3>delay</h3>
+    <p>Specifies when transition will start.</p>
+
+    <div class="container">
+        <div>
+            <h5>No Delay</h5>
+            <div class="circle circle1"></div>
+        </div>
+        <div>
+            <h5>5 second Delay</h5>
+             <div class="circle circle2"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
