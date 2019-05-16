@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
+
+<head>
     <meta charset="utf-8">
     <title>CSS3 Transitions</title>
     <script type="text/javascript" href="style.js"></script>
@@ -12,6 +13,8 @@
     <h1>Transitions</h1>
     <p>Transitions go hand-in-hand with transforms.</p>
     <h2>Why we need Transitions</h2>
+    <p>.trans:hover { transform: rotate(45deg); <br /> transition: all 1s; }
+    </p>
     <div class="container">
         <div>
             <h5>No Transition</h5>
@@ -36,18 +39,32 @@
     <p>transition: [property][duration][timing-function][delay];</p>
 
     <h2>transition-property</h2>
+    <p>transition-property: property;</p>
     <ul>
         <li>Specifies what css property the transition will be applied to.</li>
         <li>Can do one property or do all properties in rule-set</li>
+        <li>Default is all</li>
     </ul>
 
+    <h3>Example</h3>
+    <p> .snake { <br /> width: 50px; <br /> height: 50px; <br /> border-radius: 25%; <br /> background-color: orangered; <br /> transition-property: width; <br /> transition-duration: 2s;}
+    </p>
+    <p>
+        .snake:hover{<br /> width: 200px;<br /> background-color: darkgreen; }
+    </p>
+    <div class="snake"></div>
+
     <h2>transition-duration</h2>
+     <p>transition-duration: time;</p>
     <ul>
         <li>Specifies time span of transition</li>
         <li>Can be in seconds or milliseconds</li>
     </ul>
 
     <h3>Example</h3>
+    <p>.square1:hover { transform: scale(1.5);<br /> transition: all 300ms; }
+    </p>
+
 
     <div class="container">
         <div>
@@ -64,8 +81,8 @@
         </div>
     </div>
 
-    <h2>Optional Properties</h2>
-    <h3>transition-timing-function</h3>
+    <h1>Optional Properties</h1>
+    <h2>transition-timing-function</h3>
     <p>Define the speed over the duration of the transition.</p>
     <ul>
         <li>Default timing is ease</li>
@@ -79,6 +96,9 @@
         </ul>
     </ul>
     <h4>Example</h4>
+    <p>
+        .par1:hover { <br /> transition: all 2s linear; <br />background-color: red; <br />transform: translateX(200px) skew(20deg); }
+    </p>
     <div id="timing">
         <div class="parallel par1"></div>
         <div class="parallel par2"></div>
@@ -86,19 +106,24 @@
         <div class="parallel par4"></div>
         <div class="parallel par5"></div>
     </div>
-    <h3>delay</h3>
+    <h2>delay</h2>
     <p>Specifies when transition will start.</p>
+    <h4>Example</h4>
+    <p>.circle2:hover {<br /> transition: all 2s 1s; <br />transform: scaleY(2); }
+    </p>
 
     <div class="container">
         <div>
-            <h5>No Delay</h5>
+            <h4>No Delay</h5>
             <div class="circle circle1"></div>
         </div>
         <div>
-            <h5>5 second Delay</h5>
-             <div class="circle circle2"></div>
+            <h5>1 second Delay</h5>
+            <div class="circle circle2"></div>
         </div>
     </div>
+
+    https://thoughtbot.com/blog/transitions-and-transforms#transition-property-required
 
 
 
@@ -108,4 +133,5 @@
 
 
 </body>
+
 </html>
