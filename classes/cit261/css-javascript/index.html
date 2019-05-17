@@ -11,18 +11,55 @@
 
 <body>
     <h1>Changing CSS Properties with JavaScript</h1>
-    <p>document.getElementById("idName").style.property = "new style";</p>
-    
+    <p>Syntax: document.getElementById("idName").style.property = "new style";</p>
+
     <h2>Example</h2>
-    
+
+    <div class="code">
+        <p>&lt;p&gt;May the &lt;span id="force"&gt;Force &lt;/span&gt; be with you.&lt;p&gt; <br /> &lt;button type="button" onclick="force();"&gt;Feel the Force!&lt;/button&gt;
+        </p>
+        <p>function force(){ <br />document.getElementById("force").style.color="red"; <br /> document.getElementById("force").style.fontWeight="bold";
+            <br /> document.getElementById("force").style.fontSize="2em"; }
+        </p>
+    </div>
+
+
     <p>May the <span id="force">Force</span> be with you.</p>
     <button type="button" onclick="force();">Feel the Force!</button>
-    
+
     <h2>Example</h2>
+    <div class="code">
+        <p>
+            &lt;div id="square"&gt;&lt;/div&gt; <br /> &lt;button type="button" onclick="toParallel();"&gt;Morph Me!&lt;/button&gt;<br /> &lt;button type="button" onclick="toSquare();"&gt;Back to Square&lt;/button&gt;
+        </p>
+        <p>
+            function toParallel() { <br /> document.getElementById("square").style.transform = "skew(20deg)";<br /> document.getElementById("square").style.transition = "all 2s"; }
+        </p>
+        <p>
+            function toSquare() { document.getElementById("square").style.transform = "none"; }
+        </p>
+    </div>
+
     <div id="square"></div>
     <button type="button" onclick="toParallel();">Morph Me!</button>
     <button type="button" onclick="toSquare();">Back to Square</button>
 
+    <h2>Example</h2>
+    <p>This example shows using user input and JavaScript to change CSS.</p>
+    <div class="code">
+        <p>
+            &lt;input type="text" id="size" name="size" placeholder="25px"&gt;<br /> &lt;button type="button" onclick="elephant();"&gt;Submit&lt;/button&gt;<br /> &lt;p id="change">Elephant&lt;/p&gt;
+        </p>
+        <p>
+            function elephant() { <br />var size = document.getElementById("size").value; <br />document.getElementById("change").style.fontSize = size; }
+        </p>
+    </div>
+    <form>
+        <label>Enter desired font size for word below. Include "px"</label><br />
+        <input type="text" id="size" name="size" placeholder="25px">
+    </form>
+    <button type="button" onclick="elephant();">Submit</button>
+    <p id="change">Elephant</p>
 
 
 </body>

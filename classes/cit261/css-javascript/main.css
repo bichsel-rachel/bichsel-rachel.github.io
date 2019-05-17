@@ -1,8 +1,28 @@
 body{
     margin-left: 50px;
+    margin-right: 50px;
+}
+
+.code{
+    background-color: gainsboro;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border: 2px solid black;
 }
 #square {
     width: 150px;
     height: 150px;
     background-color: mediumvioletred;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#change {
+    color: darkblue;
+    font-family: cursive;
+}
+
+button {
+    padding: 5px;
 }
