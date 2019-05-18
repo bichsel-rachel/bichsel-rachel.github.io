@@ -12,9 +12,10 @@
 <body>
     <h1>Changing CSS Properties with JavaScript</h1>
     <p>Syntax: document.getElementById("idName").style.property = "new style";</p>
-
+    <!--Example 1--->
     <h2>Example</h2>
-
+    
+    <!--Display Example 1 code--->
     <div class="code">
         <p>&lt;p&gt;May the &lt;span id="force"&gt;Force &lt;/span&gt; be with you.&lt;p&gt; <br /> &lt;button type="button" onclick="force();"&gt;Feel the Force!&lt;/button&gt;
         </p>
@@ -23,11 +24,13 @@
         </p>
     </div>
 
-
+    <!--Display Example 1 code--->
     <p>May the <span id="force">Force</span> be with you.</p>
     <button type="button" onclick="force();">Feel the Force!</button>
-
+    
+    <!--Example 2--->
     <h2>Example</h2>
+    <!--Display Example 2 code--->
     <div class="code">
         <p>
             &lt;div id="square"&gt;&lt;/div&gt; <br /> &lt;button type="button" onclick="toParallel();"&gt;Morph Me!&lt;/button&gt;<br /> &lt;button type="button" onclick="toSquare();"&gt;Back to Square&lt;/button&gt;
@@ -39,13 +42,16 @@
             function toSquare() { document.getElementById("square").style.transform = "none"; }
         </p>
     </div>
-
+    
+    <!--Display Example 2 code--->
     <div id="square"></div>
     <button type="button" onclick="toParallel();">Morph Me!</button>
     <button type="button" onclick="toSquare();">Back to Square</button>
-
+    
+    <!--Example 3--->
     <h2>Example</h2>
     <p>This example shows using user input and JavaScript to change CSS.</p>
+    <!--Display Example 3 code--->
     <div class="code">
         <p>
             &lt;input type="text" id="size" name="size" placeholder="25px"&gt;<br /> &lt;button type="button" onclick="elephant();"&gt;Submit&lt;/button&gt;<br /> &lt;p id="change">Elephant&lt;/p&gt;
@@ -54,6 +60,8 @@
             function elephant() { <br />var size = document.getElementById("size").value; <br />document.getElementById("change").style.fontSize = size; }
         </p>
     </div>
+    
+    <!--Display Example 3 code--->
     <form>
         <label>Enter desired font size for word below. Include "px"</label><br />
         <input type="text" id="size" name="size" placeholder="25px">
