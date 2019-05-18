@@ -38,6 +38,7 @@
     <p>transition shorthand:</p>
     <p>transition: [property][duration][timing-function][delay];</p>
 
+    <!---Transition Property--->
     <h2>transition-property</h2>
     <p>transition-property: property;</p>
     <ul>
@@ -45,7 +46,8 @@
         <li>Can do one property or do all properties in rule-set</li>
         <li>Default is all</li>
     </ul>
-
+    
+    <!---Transition Property Example--->
     <h3>Example</h3>
     <p> .snake { <br /> width: 50px; <br /> height: 50px; <br /> border-radius: 25%; <br /> background-color: orangered; <br /> transition-property: width; <br /> transition-duration: 2s;}
     </p>
@@ -54,6 +56,7 @@
     </p>
     <div class="snake"></div>
 
+     <!---Transition Duration--->
     <h2>transition-duration</h2>
      <p>transition-duration: time;</p>
     <ul>
@@ -61,6 +64,7 @@
         <li>Can be in seconds or milliseconds</li>
     </ul>
 
+    <!---Transition Duration Example--->
     <h3>Example</h3>
     <p>.square1:hover { transform: scale(1.5);<br /> transition: all 300ms; }
     </p>
@@ -81,6 +85,7 @@
         </div>
     </div>
 
+     <!---Transition Timing--->
     <h1>Optional Properties</h1>
     <h2>transition-timing-function</h2>
     <p>Define the speed over the duration of the transition.</p>
@@ -98,6 +103,8 @@
             </ul>
         </li>
     </ul>
+    
+    <!---Transition Timing Example--->
     <h4>Example</h4>
     <p>
         .par1:hover { <br /> transition: all 2s linear; <br />background-color: red; <br />transform: translateX(200px) skew(20deg); }
@@ -109,8 +116,12 @@
         <div class="parallel par4"></div>
         <div class="parallel par5"></div>
     </div>
+    
+     <!---Transition Delay--->
     <h2>transition-delay</h2>
     <p>Specifies when transition will start.</p>
+    
+    <!---Transition Delay Example--->
     <h4>Example</h4>
     <p>.circle2:hover {<br /> transition: all 2s 1s; <br />transform: scaleY(2); }
     </p>
