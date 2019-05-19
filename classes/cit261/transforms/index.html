@@ -15,7 +15,7 @@
         <li>The transform property allows a 2D or 3D change to an element</li>
         <li>In 2D you can rotate, translate, skew, and scale elements.</li>
     </ul>
-    <p>Syntax: transfrom: </p>
+    <!----Rotate Section----->
     <h2>Rotate</h2>
     <ul>
         <li>Rotates clockwise and counterclockwise in degrees</li>
@@ -24,6 +24,7 @@
         <li>Syntax: transform: rotate(#deg);</li>
     </ul>
 
+    <!----Rotate Example----->
     <div class="container">
         <div>
             <h5>rotate(90deg);</h5>
@@ -34,14 +35,20 @@
             <div class="trapezoid trapezoid2"></div>
         </div>
     </div>
+
+    <!----Translate Section----->
     <h2>Translate</h2>
     <ul>
         <li>Moves element up/down or right/left</li>
         <li>Positive X goes right, negative X goes left</li>
         <li>Positive Y goes down, negative X goes up</li>
     </ul>
+
+    <!----Translate Example----->
     <h4>transform: translate(30px, 20px);</h4>
     <div class="triangle"></div>
+
+    <!----Skew Section----->
     <h2>Skew</h2>
     <ul>
         <li>Tilts the X and Y axes of element</li>
@@ -49,6 +56,7 @@
         <li>Positive Y tilts down, negative Y tilts up</li>
     </ul>
 
+    <!----Skew Example----->
     <div class="container">
         <div>
             <h5>skewX(30deg);</h5>
@@ -64,6 +72,7 @@
         </div>
     </div>
 
+    <!----Scale Section----->
     <h2>Scale</h2>
     <ul>
         <li>This allows to increase or decrease size of element</li>
@@ -72,6 +81,7 @@
         <li>scaleX() is for just scaling the x-axis</li>
     </ul>
 
+    <!----Scale Example----->
     <div class="container">
         <div>
             <h5>scale(1.5)</h5>
@@ -94,11 +104,14 @@
         <a href="../index.html"></a>
     </footer>
 
+    <!----Multiple Transforms Section----->
     <h2>Multiple Transforms</h2>
     <ul>
         <li>You can do multiple transforms in one line. Just add them without commas</li>
     </ul>
     <h4>transform: skewX(25deg) translate(100px, 75px) scale(.7);</h4>
+
+    <!----Multiple Transforms Example----->
     <div class="shape"></div>
 
     <p>References: https://thoughtbot.com/blog/transitions-and-transforms#transition-property-required</p>
