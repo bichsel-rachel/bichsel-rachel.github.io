@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Transforms</title>
+    <script src="style.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+    <h1>Transforms</h1>
+    <ul>
+        <li>The transform property allows a 2D or 3D change to an element</li>
+        <li>In 2D you can rotate, translate, skew, and scale elements.</li>
+    </ul>
+    <p>Syntax: transfrom: </p>
+    <h2>Rotate</h2>
+    <ul>
+        <li>Rotates clockwise and counterclockwise in degrees</li>
+        <li>Positive goes clockwise</li>
+        <li>Negative goes counterclosewise</li>
+        <li>Syntax: transform: rotate(#deg);</li>
+    </ul>
+
+    <div class="container">
+        <div>
+            <h5>rotate(90deg);</h5>
+            <div class="trapezoid trapezoid1"></div>
+        </div>
+        <div>
+            <h5>rotate(-150deg);</h5>
+            <div class="trapezoid trapezoid2"></div>
+        </div>
+    </div>
+    <h2>Translate</h2>
+    <ul>
+        <li>Moves element up/down or right/left</li>
+        <li>Positive X goes right, negative X goes left</li>
+        <li>Positive Y goes down, negative X goes up</li>
+    </ul>
+    <h4>transform: translate(30px, 20px);</h4>
+    <div class="triangle"></div>
+    <h2>Skew</h2>
+    <ul>
+        <li>Tilts the X and Y axes of element</li>
+        <li>Positive X tilts left, negative X tilts right</li>
+        <li>Positive Y tilts down, negative Y tilts up</li>
+    </ul>
+
+    <div class="container">
+        <div>
+            <h5>skewX(30deg);</h5>
+            <div class="parallel parallel1"></div>
+        </div>
+        <div>
+            <h5>skewY(15deg);</h5>
+            <div class="parallel parallel2"></div>
+        </div>
+        <div>
+            <h5>skew(25deg, -10deg);</h5>
+            <div class="parallel parallel3"></div>
+        </div>
+    </div>
+
+    <h2>Scale</h2>
+    <ul>
+        <li>This allows to increase or decrease size of element</li>
+        <li>Can scale both y and x-axis by using scale()</li>
+        <li>scaleY() is for just scaling the y-axis</li>
+        <li>scaleX() is for just scaling the x-axis</li>
+    </ul>
+
+    <div class="container">
+        <div>
+            <h5>scale(1.5)</h5>
+            <div class="square square"></div>
+        </div>
+        <div>
+            <h5>scale(1.5, .5)</h5>
+            <div class="square square2"></div>
+        </div>
+        <div>
+            <h5>scaleX(1.5)</h5>
+            <div class="square square3"></div>
+        </div>
+        <div>
+            <h5>scaleY(1.5)</h5>
+            <div class="square square4"></div>
+        </div>
+    </div>
+    <footer>
+        <a href="../index.html"></a>
+    </footer>
+
+    <h2>Multiple Transforms</h2>
+    <ul>
+        <li>You can do multiple transforms in one line. Just add them without commas</li>
+    </ul>
+    <h4>transform: skewX(25deg) translate(100px, 75px) scale(.7);</h4>
+    <div class="shape"></div>
+
+    <p>References: https://thoughtbot.com/blog/transitions-and-transforms#transition-property-required</p>
+</body>
+
+</html>

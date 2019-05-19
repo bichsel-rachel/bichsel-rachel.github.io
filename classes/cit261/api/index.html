@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>API</title>
+    <script src="style.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+    <h1>Local Storage API</h1>
+    <p>Access Local Storage by using localStorage.</p>
+    <p>returns a storage object. Storage has one proprty, length.</p>
+    <h2>Methods</h2>
+    <p>setItem(key, value)</p>
+    <p>adds item to storage. Uses strings for key and value. If string is not passed it will convert to string.</p>
+    <p>Example: localStorage.setItem('name', 'Bob');</p>
+    <ul>
+        <li>setItem(key, value)</li>
+        <li>getItem(key)</li>
+        <li>removeItem(key)</li>
+        <li>key(n)</li>
+        <li>clear()</li>
+    </ul>
+    
+    <h2>Storage Limits</h2>
+    <ul>
+        <li>Chrome, IE, Firefox: 10MB</li>
+        <li>Safari: 5MB for local storage</li>
+    </ul>
+<p onload="hogwarts()" id="results"></p>
+<footer>
+    <a href="../index.html">Back to Assignments</a>
+</footer>
+</body>
+
+</html>

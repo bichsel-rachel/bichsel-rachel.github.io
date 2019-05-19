@@ -1,0 +1,121 @@
+body{
+    margin-bottom: 100px;
+    padding-left: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+.code {
+    background-color: gainsboro;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border: 2px solid black;
+}
+
+h5 {
+    text-align: center;
+}
+/*****SCALE*****/
+
+.square {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.square:hover {
+    transform: scale(1.5);
+    transition: all 2s;
+}
+
+.square2:hover {
+    transform: scale(1.5, .5);
+    transition: all 2s;
+}
+
+.square3:hover {
+    transform: scaleX(1.5);
+    transition: all 2s;
+}
+
+.square4:hover {
+    transform: scaleY(1.5);
+    transition: all 2s;
+}
+
+/*****ROTATE*****/
+
+.trapezoid {
+    border-bottom: 75px solid purple;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 75px;
+    margin: 40px;
+}
+
+.trapezoid1:hover {
+    transform: rotate(90deg);
+    transition: all 2s;
+}
+
+.trapezoid2:hover {
+    transform: rotate(-150deg);
+    transition: all 2s;
+}
+
+/*****TRANSLATE*****/
+.triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid green;
+    }
+
+.triangle:hover {
+    transform: translate(30px, 20px);
+    transition: all 2s;
+}
+
+/*****SKEW*****/
+.parallel {
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    margin: 20px 40px 20px 40px;
+}
+
+.parallel1:hover {
+    transform: skewX(30deg);
+    transition: all 2s;
+}
+
+.parallel2:hover {
+    transform: skewY(15deg);
+    transition: all 2s;
+}
+
+.parallel3:hover {
+    transform: skew(25deg, -10deg);
+    transition: all 2s;
+}
+
+/*****MULTIPLE*****/
+.shape {
+    width: 75px;
+    height: 95px;
+    background-color: blue;
+    margin: 30px;
+}
+
+.shape:hover {
+    transform: skewX(25deg) translate(100px, 75px) scale(.7);
+    transition: all 3s;
+    
+}
