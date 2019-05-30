@@ -17,6 +17,6 @@ request.onload = function () {
     document.getElementById('description').innerHTML = brazilWeather.weather[0].description;
     var icon_code = brazilWeather.weather[0].icon; 
     console.log(icon_code);
-    document.getElementById('icon').innerHTML = '<img src="http://openweathermap.org/img/w/' + icon_code + '.png">';
+    document.getElementById('icon').innerHTML = '<img src="https://openweathermap.org/img/w/' + icon_code + '.png">';
     
 }
