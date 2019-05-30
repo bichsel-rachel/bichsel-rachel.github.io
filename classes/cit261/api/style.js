@@ -30,4 +30,3 @@ function user() {
     document.getElementById('test').innerHTML = "<strong>First Name: </strong>" + userInfo.firstName + "<br /><strong>Last Name: </strong>" + userInfo.lastName + "<br /><strong>Age: </strong>" + userInfo.age;
 }
 //window.onload = colors;
-
