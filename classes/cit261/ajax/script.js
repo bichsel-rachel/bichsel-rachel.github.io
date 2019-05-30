@@ -21,7 +21,7 @@ function renderHTML(data) {
     var htmlString = "";
     
     for (i = 0; i < data.length; i++){
-        htmlString += "<p>" + data[i].name + " is a " + data[i].species + ".</p>";
+        htmlString += "<p>" + data[i].name + " is a " + data[i].race + ".</p>";
     }
   animalContainer.insertAdjacentHTML('beforeend', htmlString);  
 }
