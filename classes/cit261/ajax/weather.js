@@ -4,7 +4,10 @@ var requestURL = 'https://api.openweathermap.org/data/2.5/weather?q=brasilia,br&
 var request = new XMLHttpRequest();
 
 //tell browser to go to URL and get JSON data. Use GET to get data. second parameter is URL you want to get.
+//HXMLHttopRequest.open(method, url, async, user, password)
+//can do methods like GET, POST, PUT, DELETE, etc.
 request.open('GET', requestURL, true);
+//send request to server
 request.send();
 
 request.onload = function () {

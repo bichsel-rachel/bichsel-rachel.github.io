@@ -1,0 +1,41 @@
+[
+{
+"name": "Frodo",
+"race": "hobbit",
+"facts": {
+"likes": [
+"reading",
+"disappearing"
+],
+"dislikes": [
+"people wanting ring",
+"spiders"
+]
+}
+},
+{
+"name": "Gandolf",
+"race": "wizard",
+"facts": {
+"likes": [
+"eagles",
+"pipes"
+],
+"dislikes": [
+"being grey all the time"
+]
+}
+},
+{
+"name": "Legolas",
+"race": "elf",
+"facts": {
+"likes": [
+"bows"
+],
+"dislikes": [
+"orcs"
+]
+}
+}
+]
