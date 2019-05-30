@@ -1,4 +1,4 @@
-var requestURL = 'http://api.openweathermap.org/data/2.5/weather?q=brasilia,br&units=imperial&APPID=0a745dde654e210f2ff1f4a49e707afa';
+var requestURL = 'https://api.openweathermap.org/data/2.5/weather?q=brasilia,br&units=imperial&APPID=0a745dde654e210f2ff1f4a49e707afa';
 //q=brasilia,br
 //XMLHttpRequest is a built in browser tool. Establish connection with URL and lets send and store data.
 var request = new XMLHttpRequest();
