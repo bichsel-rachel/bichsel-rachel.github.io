@@ -1,3 +1,5 @@
+//Local AJAX practice
+
 var animalContainer = document.getElementById("crap");
 var btn = document.getElementById("btn");
 
