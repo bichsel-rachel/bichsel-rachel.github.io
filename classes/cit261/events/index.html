@@ -17,21 +17,61 @@
     <main>
         <p>Those for Mobile (ex: onTouchBegin, onLoad, etc.) and Animation and Transition Events</p>
 
+        
+         <!----Onchange example---->
         <h2>onchange</h2>
-        <p></p>
+        <div id="color">
+            <p>What Emotion are you?</p>
+            <select id="emotion" onchange="emotion()">
+            <option value="none">Pick One</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="angry">Angry</option>
+            </select>
+        </div>
+
+        <!----Onclick example---->
         <h2>onclick</h2>
+        <p>What is the "Answer to the Ultimate Question of Life, the Universe, and Everything"? - Hitchhiker's Guide to the Galaxy.</p>
+        <div id="magicNumber"></div>
+        <button onclick="magicNumber()">Answer</button>
+
+        <!----Onmouseover with Transition example---->
         <h2>onmouseover with Transition</h2>
-            <div id="square"></div>
-            <button onmouseover="toParallel()"></button>
+        <div onmouseover="toParallel()" id="square"></div>
+
+        <!----Onmouseout example---->
         <h2>onmouseout</h2>
+        <p>If you let go of the chicken, she will run away!</p>
+        <img src="chicken.png" onmouseout="chickenRun()" id="chicken">
+
+         <!----Onkeydown example---->
         <h2>onkeydown</h2>
-        <h2>onload</h2>
+        <ul>
+            <li>onekeypress</li>
+            <li>onkeyup</li>
+        </ul>
+        <p>Where is Wally?</p>
+        <p>Press any key in the textfield to find him!</p>
+        <img onkeypress="findWally()" src="wally.png" alt="wally" id="wally">
+        
+        
+        <input type="text" onkeydown="findWally()" id=text>
+         <!----Onload example---->
+        <h2>onload with Animation</h2>
+        <div></div>
 
         <h1>Mobile Events</h1>
+         <h2>ontouchstart</h2>
+        <p>Poke the Face!</p>
+        <div ontouchstart="pokeFake()" id="face">
+        <img src="smile.png" alt="happy face" id="smile">
+        <img src="sad.jpg" alt="sad face" id="frown">
+        </div>
         <h2>ontouchcancel</h2>
         <h2>onteachend</h2>
         <h2>ontouchmove</h2>
-        <h2>ontouchstart</h2>
+       
 
     </main>
     <footer>
