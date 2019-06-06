@@ -2,6 +2,12 @@ main {
     padding-left: 50px;
 }
 
+#magicNumber {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkred;
+}
+
 #square {
     width: 100px;
     height: 100px;
