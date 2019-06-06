@@ -19,10 +19,38 @@ function emotion() {
     
 }
 
+//function animation() {
+//var elem = document.getElementById("animate"); 
+//  var pos = 0;
+//  var id = setInterval(frame, 5);
+//  function frame() {
+//    if (pos == 350) {
+//      clearInterval(id);
+//    } else {
+//      pos++; 
+//      elem.style.top = pos + 'px'; 
+//      elem.style.left = pos + 'px'; 
+//    }
+//  }
+//}
 function animation() {
-    document.getElementById("heart").style.transform = "skew(20deg)";
-    document.getElementById("heart").style.transition = "all 2s";
+    var heart = document.getElementById("animate");
+heart.animate(
+[
+    {transform: 'scale(1)', offset: 0},
+    {transform: 'scale(2)',  offset: .5},
+    {transform: 'scale(1)',  offset: 1},
+], {
+    duration: 2000,
+    easing: 'ease-in-out',
+    delay: 10,
+    iterations: Infinity,
+    direction: 'alternate',
+    fill: 'forwards'
 }
+);
+}
+
 
 function chickenRun() {
     document.getElementById("chicken").style.transform = "translateX(200px)";

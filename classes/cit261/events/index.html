@@ -10,15 +10,15 @@
 
 </head>
 
-<body>
+<body onload="animation()">
     <header>
         <h1>JavaScript Events</h1>
     </header>
     <main>
         <p>Those for Mobile (ex: onTouchBegin, onLoad, etc.) and Animation and Transition Events</p>
 
-        
-         <!----Onchange example---->
+
+        <!----Onchange example---->
         <h2>onchange</h2>
         <div id="color">
             <p>What Emotion are you?</p>
@@ -45,7 +45,7 @@
         <p>If you let go of the chicken, she will run away!</p>
         <img src="chicken.png" onmouseout="chickenRun()" id="chicken">
 
-         <!----Onkeydown example---->
+        <!----Onkeydown example---->
         <h2>onkeydown</h2>
         <ul>
             <li>onekeypress</li>
@@ -54,24 +54,25 @@
         <p>Where is Wally?</p>
         <p>Press any key in the textfield to find him!</p>
         <img onkeypress="findWally()" src="wally.png" alt="wally" id="wally">
-        
-        
+
+
         <input type="text" onkeydown="findWally()" id=text>
-         <!----Onload example---->
+        <!----Onload example---->
         <h2>onload with Animation</h2>
-        <div></div>
+    
+            <div id="animate" ></div>
 
         <h1>Mobile Events</h1>
-         <h2>ontouchstart</h2>
+        <h2>ontouchstart</h2>
         <p>Poke the Face!</p>
         <div ontouchstart="pokeFake()" id="face">
-        <img src="smile.png" alt="happy face" id="smile">
-        <img src="sad.jpg" alt="sad face" id="frown">
+            <img src="smile.png" alt="happy face" id="smile">
+            <img src="sad.jpg" alt="sad face" id="frown">
         </div>
         <h2>ontouchcancel</h2>
         <h2>onteachend</h2>
         <h2>ontouchmove</h2>
-       
+
 
     </main>
     <footer>
