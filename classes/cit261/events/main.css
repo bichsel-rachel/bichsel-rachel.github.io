@@ -80,3 +80,9 @@ main {
       background: red;
       border-radius: 50%
 }
+
+#parTouch {
+    background-color: lightgray;
+    border: solid 2px purple;
+    padding: 10px;
+}
