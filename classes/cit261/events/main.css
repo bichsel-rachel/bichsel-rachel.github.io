@@ -73,3 +73,10 @@ main {
     transform: rotate(45deg);
     transform-origin: 100% 100%;
 }
+
+#stop-go {
+    width: 100px;
+      height: 100px;
+      background: red;
+      border-radius: 50%
+}
