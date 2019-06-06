@@ -61,7 +61,7 @@ function stopGo() {
     document.getElementById("stop-go").style.backgroundColor = "green";
 }
 
-function coordinates() {
+function coordinates(event) {
     var x = event.touches(0).clientX;
     var y = event.touches(0).clientY;
     document.getElementById("coordResults").innerHTML = "(X,Y): " + x + " , " + y;
