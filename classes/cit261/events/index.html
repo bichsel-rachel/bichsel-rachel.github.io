@@ -67,18 +67,18 @@
          <!----touchstart example---->
         <h2>touchstart</h2>
         <p>Poke the Face!</p>
-        <div touchstart="pokeFake()" id="face">
+        <div ontouchstart="pokeFake()" id="face">
             <img src="smile.png" alt="happy face" id="smile">
             <img src="sad.jpg" alt="sad face" id="frown">
         </div>
          <!----touchend Example---->
         <h2>teachend</h2>
-        <div touchend="stopGo()" id="stop-go"></div>
+        <div ontouchend="stopGo()" id="stop-go"></div>
          <!----touchmove Example---->
         <h2>touchmove</h2>
         <p>Occurs when user moves finger across the screen.</p>
         <p onmove="coordinates()">Touch this paragraph to trigger the touchmove event. Move finger around the get x and y coordinates where you are touching.</p>
-         <p touchend="coordResults"></p>
+         <p ontouchend="coordResults"></p>
          <!----touchcancel---->
         <h2>touchcancel</h2>
         <p>Occurs when touch is interrupted.</p>
