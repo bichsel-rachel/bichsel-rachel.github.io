@@ -57,7 +57,7 @@ document.getElementById("smile").style.display = "none";
 document.getElementById("frown").style.display = "inline";
 }
 
-function stopGo {
+function stopGo() {
     document.getElementById("stop-go").style.backgroundColor = "green";
 }
 
