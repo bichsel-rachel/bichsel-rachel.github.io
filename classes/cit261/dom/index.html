@@ -23,14 +23,30 @@
             <li>Most common method to use is getElementById</li>
             <li>An example of a DOM property is innerHTML.</li>
         </ul>
-        
+
         <!----Create Element----->
         <h2>createElement</h2>
-        <button onclick="createElement()">Create Paragraph</button>
+        <ul>
+            <li>Using getElementById helps control where element and text is inserted.</li>
+            <li>If you use document.body.appendChild("newPara), it will put the new paragraph at the very bottom of the body element.</li>
+            <li>You can also insert text within the newly created paragraph element. This is discussed in next section. </li>
+        </ul>
+        <p>You keep pressing the button to keep making an paragraph element.</p>
+        <div class="code">
+            function createPara() { <br />var newPara = document.createElement("p");<br /> var text = document.createTextNode("This is a new paragraph element that was not previously here."); <br />newPara.appendChild(text);<br /> document.getElementById("insertPar").appendChild(newPara); }
+        </div><br />
+        <button onclick="createPara()">Create Paragraph</button>
         <div id="insertPar"></div>
-        
-         <!----Append Child----->
+
+        <!----Append Child----->
         <h2>appendChild</h2>
+        <ul>
+            <li>You insert/append the text within the newly created listed item.</li>
+            <li>On the last line  you append again the text within the listed item within the unordered list on the HTML page.</li>
+        </ul>
+        <div class="code">
+            function addName() {<br /> var node = document.createElement("LI");<br /> var textnode = document.createTextNode("Sarah");<br /> node.appendChild(textnode); <br />document.getElementById("partyList").appendChild(node); }
+        </div><br />
         <ul id="partyList">
             <li>Rachel</li>
             <li>David</li>
@@ -39,14 +55,46 @@
 
         <p>Click the button to append an item to the end of the list.</p>
 
-        <button onclick="addName()">Try it</button>
-        
+        <button onclick="addName()">Add Name</button>
+
         <!----Insert Before----->
         <h2>insertBefore</h2>
+        <ul>
+            <li>appendChild always does it at the end. Insert before lets you insert before other children.</li>
+        </ul>
+        <div class="code">
+            function beforeName() { <br />var newName = document.createElement("li");<br /> var textnode = document.createTextNode("Hilary");<br /> newName.appendChild(textnode); var list = document.getElementById("partyList"); <br />list.insertBefore(newName, list.childNodes[0]); }
+        </div><br />
+        <button onclick="beforeName()">Add Name Before</button>
 
-        
         <!----Remove Child----->
         <h2>removeChild</h2>
+        <ul>
+            <li>You can remove any child by specifying childNodes[#].</li>
+        </ul>
+        <div class="code">
+            function removeName() {<br /> var list = document.getElementById("partyList");<br /> list.removeChild(list.childNodes[0]); }
+        </div><br />
+        <button onclick="removeName()">Remove First Name</button><br /><br />
+
+        <!----Remove Third Child----->
+        <div class="code">
+            function removeThirdName() {<br /> var list = document.getElementById("partyList");<br /> list.removeChild(list.childNodes[2]); }
+        </div><br />
+        <button onclick="removeThirdName()">Remove Third Name</button>
+
+        <!----Replace Child----->
+        <h2>replaceChild</h2>
+        <ul>
+            <li>As with removeChild, you can specify what child to remove with replaceChild. In this cae you use this syntax: node.replaceChild(newnode, oldnode).</li>
+        </ul>
+        <div class="code">
+            function replacePartyList() {<br /> var textnode = document.createTextNode("Ricky");<br /> var item = document.getElementById("partyList").childNodes[0]; <br />item.replaceChild(textnode, item.childNodes[0]); }
+        </div><br />
+        <p>After inserting and removing, try to replace the first name on the list.</p>
+        <button onclick="replacePartyList()">Replace Child</button>
+
+
 
     </main>
     <footer>

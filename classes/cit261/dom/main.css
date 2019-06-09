@@ -1,0 +1,16 @@
+body {
+    padding-left: 50px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.code{
+    background-color: gainsboro;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border: 2px solid black;
+}
