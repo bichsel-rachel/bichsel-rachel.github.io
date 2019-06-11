@@ -1,3 +1,5 @@
+//Parse Example
+
 function hogwarts(){
 var houses = ['Gryffindor','Slytherin','Ravenclaw', 'Hufflepuff'];
 localStorage.setItem("houses", JSON.stringify(houses));
@@ -31,24 +33,21 @@ function retrieveData() {
 
 function displayData(characters){
     
+     var htmlString = "";
     
-    document.getElementById("display").innerHTML = characters[0].name;
-    
-}
-
-    
-//    var htmlString = "";
-//    
-//    for (i = 0; i < character.length; i++){
-//        htmlString += "<p>" + character[i].name + " is a " + character[i].race + ". He likes " + character[i].facts.likes + ". He dislikes " + character[i].facts.dislikes + ".</p>";
-//        document.getElementById("display").innerHTML;
-//    }
-
-function renderHTML(data) {
-    var htmlString = "";
-    
-    for (i = 0; i < data.length; i++){
-        htmlString += "<p>" + data[i].name + " is a " + data[i].race + ". He likes " + data[i].facts.likes + ". He dislikes " + data[i].facts.dislikes + ".</p>";
+    for (i = 0; i < characters.length; i++){
+        htmlString += "<p>" + characters[i].name + " is a " + characters[i].race + ". He likes " + characters[i].facts.likes + ". He dislikes " + characters[i].facts.dislikes + ".</p>";
     }
-  animalContainer.insertAdjacentHTML('beforeend', htmlString);  
+    
+    document.getElementById("display").innerHTML = htmlString;
+    
 }
+
+//Stringify example
+
+function favoriteThings() {
+    var fav = {color: "purple", food: "shrimp", holidy: "Halloween", book: "Misborn"};
+    var intoJSON = JSON.stringify(fav);
+    document.getElementById("favorite").innerHTML = intoJSON;
+}
+
