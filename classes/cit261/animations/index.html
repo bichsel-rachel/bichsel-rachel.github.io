@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Animations</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>CSS Animations</h1>
+    </header>
+    <main>
+        <ul>
+            <li>Some older browsers need specific prefixes (-webkit-) to understand the animation.</li>
+        </ul>
+        <!--@keyframes--->
+        <h2>@keyframes</h2>
+        <ul>
+            <li>You can change from current stye to a new style at certain times</li>
+            <li>You first need to bind animation to element.</li>
+            <li>You do this by giving the aniation a name and then referencing that name in the @keyframes</li>
+            <li>Specify how long the animation will occur with animation-duration.</li>
+            <li>Animation will go back to the original style once done. </li>
+        </ul>
+        
+        <!--simple animation example--->
+        <p class="code">#circleEx { <br />font-size: 50px;<br /> background-color: turquoise;<br /> width: 200px;<br /> height: 200px;<br /> border-radius: 100px;<br /> <b>animation-name: example1;</b><br /> animation-duration: 7s;<br /> }<br />@keyframes <b>example1</b> {<br /> from {background-color: turquoise;}<br /> to {background-color: purple;} }
+        </p>
+        <div id="circleEx"></div>
+
+        <ul>
+            <li>You can use percentages to specify when to transition to next style. Ex: first example, from was 0: and to was 100%</li>
+            <li>You can also change multiple attributes of an element in one keyframe</li>
+        </ul>
+        
+        <!--multiple properties example--->
+        <p class="code">#squareEx { <br />background-color: red;<br /> width: 150px; height: 150px; <br />position: relative; <br />animation-name: rainbow; <br />animation-duration: 10s; } <br /><br />@keyframes rainbow { <br />0% {background-color:red; left: 0px; top: 0px; width: 150px;}<br /> 10% {background-color:orangered; left: 200px; top: 0px; width: 100px;} <br />25% {background-color:yellow; left: 200px; top: 150px; width: 80px;}<br /> 50% {background-color:green; left: 150px; top: 150px; width: 100px;}<br /> 75% {background-color:blue; left: 60px; top: 60px; width: 125px;}<br /> 100% {background-color:purple; left: 0px; top: 0px; width: 150px;} <br />}
+        </p>
+        <div id="squareEx"></div>
+
+        <h2>Other Animation Properties</h2>
+        
+        <!--Animation-delay example--->
+        <h3>animation-delay</h3>
+        <ul>
+            <li>Delays the start of animation</li>
+        </ul>
+        
+        <div id="delayEx"></div>
+         <!--Animation-iteration example--->
+        <h3>animation-iteration-count</h3>
+         <ul>
+            <li>Specifies number of times animation should run</li>
+             <li>You can also specify "infinite" to make the animation constantly run</li>
+        </ul>
+         <div id="iterationEx"></div>
+        
+         <!--Animation-direction example--->
+        <h3>animation-direction</h3>
+         <ul>
+            <li>Specifies whether animation should run forwards, backwards or alternate cycles</li>
+             <li>alternate - is played forwards and then backwards</li>
+             <li>alternate-reverse - plays backwards then forwards</li>
+        </ul>
+         <div id="directionEx"></div>
+        
+         <!--Animation-timing-function example--->
+        <h3>animation-timing-function</h3>
+         <ul>
+            <li>Specifies speed curve of animation.</li>
+             <li>Exactly the same as the transitions</li>
+             <li>ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)</li>
+        </ul>
+         <div id="timingEx"></div>
+        
+         <!--Animation-fill-mode example--->
+        <h3>animation-fill-mode</h3>
+         <ul>
+            <li>CSS animations don't effect element before first keyframe or after last keyframe. You can override it.</li>
+            <li>Specifies a style for a target element when element is not playing.</li>
+             <li>none - default</li>
+             <li>forwards - element retains style values that is set by last keyframe (depends on animation-direction and animation-iteration-count</li>
+             <li>backwards - element has style values set by the first keyframe (depends on animation-direction)</li>
+             <li>both - extends animation properties in both directions</li>
+        </ul>
+         <div id="fillEx"></div>
+
+        <h2>Shorthand</h2>
+        <p>animation: example 10s linear 2s infinite alternate</p>
+        
+        <h1>Triggering</h1>
+        <ul>
+            <li>If just using CSS, animation is started once page is loaded.</li>
+            <li>You can also trigger animations by using JavaScript</li>
+        </ul>
+    
+        <p>To see examples of triggering animation with JavaScript, go to <a href="../triggering/index.html">this link</a>.</p>
+    </main>
+
+    <footer>
+        <a href="../index.html">Back to Assignments</a>
+    </footer>
+</body>
+
+</html>

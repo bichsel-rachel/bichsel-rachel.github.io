@@ -1,0 +1,50 @@
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.code{
+    background-color: gainsboro;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border: 2px solid black;
+}
+
+footer {
+    margin-top: 500px;
+}
+/******Circle Example*****/
+#circleEx {
+    font-size: 50px;
+    background-color: turquoise;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    animation-name: example1;
+    animation-duration: 7s;    
+}
+
+@keyframes example1 {
+    from {background-color: turquoise;}
+    to {background-color: purple;}
+}
+
+/******Square Example*****/
+#squareEx {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation-name: rainbow;
+    animation-duration: 10s;
+}
+
+@keyframes rainbow {
+    0% {background-color:red; left: 0px; top: 0px; width: 150px;}
+    10% {background-color:orangered; left: 200px; top: 0px; width: 100px;}
+    25% {background-color:yellow; left: 200px; top: 150px; width: 80px;}
+    50% {background-color:green; left: 150px; top: 150px; width: 100px;}
+    75% {background-color:blue; left: 60px; top: 60px; width: 125px;}
+    100% {background-color:purple; left: 0px; top: 0px; width: 150px;}
+}
