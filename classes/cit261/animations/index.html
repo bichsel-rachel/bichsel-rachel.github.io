@@ -27,7 +27,7 @@
             <li>Specify how long the animation will occur with animation-duration.</li>
             <li>Animation will go back to the original style once done. </li>
         </ul>
-        
+
         <!--simple animation example--->
         <p class="code">#circleEx { <br />font-size: 50px;<br /> background-color: turquoise;<br /> width: 200px;<br /> height: 200px;<br /> border-radius: 100px;<br /> <b>animation-name: example1;</b><br /> animation-duration: 7s;<br /> }<br />@keyframes <b>example1</b> {<br /> from {background-color: turquoise;}<br /> to {background-color: purple;} }
         </p>
@@ -37,68 +37,94 @@
             <li>You can use percentages to specify when to transition to next style. Ex: first example, from was 0: and to was 100%</li>
             <li>You can also change multiple attributes of an element in one keyframe</li>
         </ul>
-        
+
         <!--multiple properties example--->
         <p class="code">#squareEx { <br />background-color: red;<br /> width: 150px; height: 150px; <br />position: relative; <br />animation-name: rainbow; <br />animation-duration: 10s; } <br /><br />@keyframes rainbow { <br />0% {background-color:red; left: 0px; top: 0px; width: 150px;}<br /> 10% {background-color:orangered; left: 200px; top: 0px; width: 100px;} <br />25% {background-color:yellow; left: 200px; top: 150px; width: 80px;}<br /> 50% {background-color:green; left: 150px; top: 150px; width: 100px;}<br /> 75% {background-color:blue; left: 60px; top: 60px; width: 125px;}<br /> 100% {background-color:purple; left: 0px; top: 0px; width: 150px;} <br />}
         </p>
         <div id="squareEx"></div>
 
         <h2>Other Animation Properties</h2>
-        
+
         <!--Animation-delay example--->
         <h3>animation-delay</h3>
         <ul>
             <li>Delays the start of animation</li>
         </ul>
-        
-        <div id="delayEx"></div>
-         <!--Animation-iteration example--->
+        <!--Animation-iteration example--->
         <h3>animation-iteration-count</h3>
-         <ul>
+        <ul>
             <li>Specifies number of times animation should run</li>
-             <li>You can also specify "infinite" to make the animation constantly run</li>
+            <li>You can also specify "infinite" to make the animation constantly run</li>
         </ul>
-         <div id="iterationEx"></div>
-        
-         <!--Animation-direction example--->
+        <div id="iterationEx"></div>
+
+        <!--Animation-direction example--->
         <h3>animation-direction</h3>
-         <ul>
+        <ul>
             <li>Specifies whether animation should run forwards, backwards or alternate cycles</li>
-             <li>alternate - is played forwards and then backwards</li>
-             <li>alternate-reverse - plays backwards then forwards</li>
+            <li>alternate - is played forwards and then backwards</li>
+            <li>alternate-reverse - plays backwards then forwards</li>
         </ul>
-         <div id="directionEx"></div>
-        
-         <!--Animation-timing-function example--->
+        <!--Animation-timing-function example--->
         <h3>animation-timing-function</h3>
-         <ul>
+        <ul>
             <li>Specifies speed curve of animation.</li>
-             <li>Exactly the same as the transitions</li>
-             <li>ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)</li>
+            <li>Exactly the same as the transitions</li>
+            <li>ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)</li>
         </ul>
-         <div id="timingEx"></div>
-        
-         <!--Animation-fill-mode example--->
+
+        <!--Example of above properties--->
+        <h3>Example of the Above Properties</h3>
+        <div class="code">#propertiesEx {<br /> width: 100px; <br /> height: 100px; <br /> background-color: green; <br /> border-radius: 50px; <br /> position: relative; <br /> bottom: 150px; <br /> right: 150px; <br /> animation-name: example2; <br /> animation-duration: 1s; <br />
+            <b>animation-delay: 2s; </b><br />
+            <b>animation-iteration-count: 2; </b><br />
+            <b>animation-direction: forwards; </b><br />
+            <b>animation-timing-function: linear; </b><br /> }
+            <br /><br /> @keyframes example2 {<br /> 0% {bottom: 150px; right: 150px;}<br /> 45% {bottom: -75px; right: 0px; width: 100px; height: 100px; border-radius: 50px;}<br /> 55% {bottom: -75px; right: 0px; height: 50px; width: 120px; border-radius: 25px;}<br /> 100% {bottom: 150px; right: -150px; height: 100px; width: 100px; border-radius: 50px;}<br /> }
+
+        </div>
+        <div class="container">
+            <div id="propertiesEx"></div>
+        </div>
+
+        <!--Animation-fill-mode example--->
         <h3>animation-fill-mode</h3>
-         <ul>
+        <ul>
             <li>CSS animations don't effect element before first keyframe or after last keyframe. You can override it.</li>
             <li>Specifies a style for a target element when element is not playing.</li>
-             <li>none - default</li>
-             <li>forwards - element retains style values that is set by last keyframe (depends on animation-direction and animation-iteration-count</li>
-             <li>backwards - element has style values set by the first keyframe (depends on animation-direction)</li>
-             <li>both - extends animation properties in both directions</li>
+            <li>none - default</li>
+            <li>forwards - element retains style values that is set by last keyframe (depends on animation-direction and animation-iteration-count</li>
+            <li>backwards - element has style values set by the first keyframe (depends on animation-direction)</li>
+            <li>both - extends animation properties in both directions</li>
         </ul>
-         <div id="fillEx"></div>
+        <div id="fillEx"></div>
 
+        <!----Shorthand---->
         <h2>Shorthand</h2>
+        <ul>
+            <li>takes on the first six animation properties. Doesn't include animation-fill.</li>
+        </ul>
         <p>animation: example 10s linear 2s infinite alternate</p>
+
+        <!------Animation-fill and shorthand--->
+        <h2>Example of Animation-fill and Shorthand</h2>
+        <p>This is pretty much the same animation as the first with a few alterations. Take note that instead of going back to the beginning position, it takes on the styles of the first keyframe.</p>
+        <div class="code">#animationFill { <br /> width: 100px; <br /> height: 100px; <br /> background-color: blue; <br /> border-radius: 50px; <br /> position: relative; <br /> bottom: 150px; <br /> right: 150px; <br />
+            <b>animation: example3 1s 2s 3 backwards ease-out; </b><br />
+            <b>animation-fill-mode: forwards;</b><br /><br /> } @keyframes example3 {<br /> 0% {bottom: 150px; right: 150px; background-color: green;}<br /> 45% {bottom: -75px; right: 0px; width: 100px; height: 100px; border-radius: 50px;}<br /> 55% {bottom: -75px; right: 0px; height: 50px; width: 120px; border-radius: 25px;}<br /> 100% {bottom: 150px; right: -150px; height: 100px; width: 100px; border-radius: 50px; background-color: red;}<br /> }
+
+        </div>
+        <div class="container">
+            <div id="animationFill"></div>
+        </div>
         
+        <!---Redirect to Triggering with JavaScript---->
         <h1>Triggering</h1>
         <ul>
             <li>If just using CSS, animation is started once page is loaded.</li>
             <li>You can also trigger animations by using JavaScript</li>
         </ul>
-    
+
         <p>To see examples of triggering animation with JavaScript, go to <a href="../triggering/index.html">this link</a>.</p>
     </main>
 
