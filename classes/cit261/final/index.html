@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>API</title>
-    <script src="style.js"></script>
+    <script src="server.js"></script>
+<!--    <script src="weather.js"></script>-->
     <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
@@ -12,7 +13,7 @@
     <h1>Haunted Puzzle</h1>
     <nav>
         <ul>
-            <li>Start Over</li>
+            <li><button type="button" onclick="startOver()">Start Over</button></li>
         </ul>
     </nav>
 </header>
@@ -22,14 +23,14 @@
     <div id="main-container">
         <form>
             <label for="fname">Enter a First Name</label><br />
-            <input type="text" name="fName"/><br />
+            <input type="text" name="fName" id="fName"/><br />
             <label for="zipCode">Enter a Zip Code in the United States</label><br />
-            <input type="text" name="zipCode"/>
+            <input type="text" name="zipCode" id="zipCode"/>
         </form>
-
+        <button type="button" onclick="levelOne()">Begin Level One</button>
     </div>
     <footer>
-        <a href="../index.html">Back to Assignments</a>
+       
     </footer>
 </body>
 
