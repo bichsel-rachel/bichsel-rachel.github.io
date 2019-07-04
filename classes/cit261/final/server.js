@@ -1,3 +1,4 @@
+//Go back to Level One
 function startOver() {
     sessionStorage.clear();
     var input = '<form><label for="fname">Enter a First Name</label><br /><input type="text" name="fName"/><br /><label for="zipCode">Enter a Zip Code in the United States</label><br /><input type="text" name="zipCode"/><button type="button" onclick="start()">Begin</button></form>';
