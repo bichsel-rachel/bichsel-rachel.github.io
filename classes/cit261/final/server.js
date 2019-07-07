@@ -78,6 +78,15 @@ function levelOne() {
     var button = document.createTextNode('Check Answer');
     createButton.appendChild(button);
     document.getElementById("myForm").appendChild(createButton);
+    
+    
+    var hintButton = document.createElement("button");
+    hintButton.setAttribute("type", "button");
+    hintButton.setAttribute("onclick", 'hintOne()');
+    var buttonText = document.createTextNode('Hint');
+    hintButton.appendChild(buttonText);
+   
+    document.getElementById("main-container").appendChild(hintButton);
 
 }
 
@@ -136,6 +145,13 @@ function levelTwo() {
     createButton.appendChild(button);
     document.getElementById("myForm").appendChild(createButton);
     
+     var hintButton = document.createElement("button");
+    hintButton.setAttribute("type", "button");
+    hintButton.setAttribute("onclick", 'hintTwo()');
+    var buttonText = document.createTextNode('Hint');
+    hintButton.appendChild(buttonText);
+   
+    document.getElementById("main-container").appendChild(hintButton);
 }
 
 function testAnswerTwo(answer) {
@@ -173,7 +189,7 @@ function levelThree() {
     document.getElementById("main-container").appendChild(header);
     
     var newPara = document.createElement("p");
-    var text = document.createTextNode("The one who makes it always sells it. The one who buys it never uses it The one who uses it never knows he's using it. What is it?");
+    var text = document.createTextNode("The one who makes it always sells it. The one who buys it never uses it. The one who uses it never knows he's using it. What is it?");
     newPara.appendChild(text);
     document.getElementById("main-container").appendChild(newPara);
     
@@ -194,6 +210,14 @@ function levelThree() {
     var button = document.createTextNode('Check Answer');
     createButton.appendChild(button);
     document.getElementById("myForm").appendChild(createButton);
+    
+     var hintButton = document.createElement("button");
+    hintButton.setAttribute("type", "button");
+    hintButton.setAttribute("onclick", 'hintThree()');
+    var buttonText = document.createTextNode('Hint');
+    hintButton.appendChild(buttonText);
+   
+    document.getElementById("main-container").appendChild(hintButton);
 }
 
 function testAnswerThree(answer) {
@@ -229,7 +253,44 @@ function final() {
     console.log(userInfo);
     
     var newPara = document.createElement("p");
-    var text = document.createTextNode('The sky is ' + userInfo.cityDesc + '  in ' + userInfo.cityName + '. ' + userInfo.fName + ' is walking down the street when a door randomly opens in a nearby old house. An old lady calls out and asks if ' + userInfo.fName + ' can help her for one minute. Being such a good person, ' + userInfo.fName + ' quickly walks into the house to assist the woman. Right as ' + userInfo.fName + ' steps in, the door closes and totals blackness is all that can be seen. A low laugher erupted behind, "You can only get out if you solve my three puzzles. If not, you are stuck here forever!!"a');
+    var text = document.createTextNode('A low laughter comes from behind ' +  userInfo.fName + ', "Speaking of a coffin..." ' + userInfo.fName + ' feels breathing inches from behind. A door to the outside opens and '  + userInfo.fName + ' runs into the street outside.');
     newPara.appendChild(text);
     document.getElementById("main-container").appendChild(newPara);
+    
+     var header = document.createElement("h3");
+    var headText = document.createTextNode("Congratulations!!");
+    header.appendChild(headText);
+    document.getElementById("main-container").appendChild(header);
+    
+    var newPara2 = document.createElement("p");
+    var text = document.createTextNode("You've completed all levels. Play again!");
+    newPara2.appendChild(text);
+    document.getElementById("main-container").appendChild(newPara2);
+    
+    var startOver = document.createElement("a");
+        startOver.setAttribute("href", "https://bichsel-rachel.github.io/classes/cit261/final/index.html");
+        var linkText = document.createTextNode('Play Again');
+        startOver.appendChild(linkText);
+        document.getElementById("main-container").appendChild(startOver);
+}
+
+function hintOne(){
+    var newPara2 = document.createElement("p");
+    var text = document.createTextNode("You put it on a envelope.");
+    newPara2.appendChild(text);
+    document.getElementById("main-container").appendChild(newPara2);
+}
+
+function hintTwo(){
+    var newPara2 = document.createElement("p");
+    var text = document.createTextNode("Every parent wishes for this while a child throws a tantrum.");
+    newPara2.appendChild(text);
+    document.getElementById("main-container").appendChild(newPara2);
+}
+
+function hintThree(){
+    var newPara2 = document.createElement("p");
+    var text = document.createTextNode("You put it into the ground.");
+    newPara2.appendChild(text);
+    document.getElementById("main-container").appendChild(newPara2);
 }
