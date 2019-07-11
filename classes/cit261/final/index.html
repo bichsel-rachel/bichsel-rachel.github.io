@@ -4,18 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>Haunted Puzzle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="server.js"></script>
 <!--    <script src="weather.js"></script>-->
     <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 <header>
-    <h1>Haunted Puzzle</h1>
-    <nav>
-        <ul>
-            <li><button type="button" onclick="startOver()">Start Over</button></li>
-        </ul>
-    </nav>
+    <h1>Haunted House Riddles</h1>
+        <button type="button" onclick="startOver()">Start Over</button>
 </header>
 
 <body>
@@ -25,7 +22,7 @@
             <label for="fname">Enter a First Name</label><br />
             <input type="text" name="fName" id="fName"/><br />
             <label for="zipCode">Enter a Zip Code in the United States</label><br />
-            <input type="text" name="zipCode" id="zipCode"/>
+            <input type="text" name="zipCode" id="zipCode"/><br />
         </form>
         <button type="button" onclick="levelOne()">Begin Level One</button>
     </div>

@@ -47,7 +47,7 @@ function levelOne() {
      //clear previous code
     document.getElementById("main-container").innerHTML = "";
     var newPara = document.createElement("p");
-    var text = document.createTextNode('The sky is ' + user.cityDesc + '  in ' + user.cityName + '. ' + user.fName + ' is walking down the street when a door randomly opens in a nearby old house. An old lady calls out and asks if ' + user.fName + ' can help her for one minute. Being such a good person, ' + user.fName + ' quickly walks into the house to assist the woman. Right as ' + user.fName + ' steps in, the door closes and totals blackness is all that can be seen. A low laugher erupted behind, "You can only get out if you solve my three puzzles. If not, you are stuck here forever!!"a');
+    var text = document.createTextNode('The sky is ' + user.cityDesc + '  in ' + user.cityName + '. ' + user.fName + ' is walking down the street when a door randomly opens in a nearby old house. An old lady calls out and asks if ' + user.fName + ' can help her for one minute. Being such a good person, ' + user.fName + ' quickly walks into the house to assist the woman. Right as ' + user.fName + ' steps in, the door closes and totals blackness is all that can be seen. A low laugher erupted behind, "You can only get out if you solve my three puzzles. If not, you are stuck here forever!!"');
     newPara.appendChild(text);
     document.getElementById("main-container").appendChild(newPara);
 
@@ -257,6 +257,13 @@ function final() {
     newPara.appendChild(text);
     document.getElementById("main-container").appendChild(newPara);
     
+     var running = document.createElement("img");
+    running.setAttribute("src", "images/running.png");
+    running.setAttribute("id", 'running');
+    running.setAttribute("alt", 'running stickman');
+    var button = document.createTextNode('Check Answer');
+    document.getElementById("main-container").appendChild(running);
+    
      var header = document.createElement("h3");
     var headText = document.createTextNode("Congratulations!!");
     header.appendChild(headText);
@@ -272,7 +279,8 @@ function final() {
         var linkText = document.createTextNode('Play Again');
         startOver.appendChild(linkText);
         document.getElementById("main-container").appendChild(startOver);
-}
+    
+   }
 
 function hintOne(){
     var newPara2 = document.createElement("p");
