@@ -306,6 +306,6 @@ function hintThree(){
 
 function bloody() {
     document.getElementById("blood").style.background= "red";
-    document.getElementById("blood").style.transform = "scale(1.5)";
+    document.getElementById("blood").style.transform = "scale(1.1)";
     document.getElementById("blood").style.transition = "all 2s";
 }
