@@ -205,6 +205,7 @@ function levelThree() {
     document.getElementById("myForm").appendChild(input);
 
     var createButton = document.createElement("button");
+     createButton.setAttribute("class", "blood");
     createButton.setAttribute("type", "button");
     createButton.setAttribute("onclick", 'testAnswerThree(document.getElementById("answer").value)');
     var button = document.createTextNode('Check Answer');
@@ -301,4 +302,10 @@ function hintThree(){
     var text = document.createTextNode("You put it into the ground.");
     newPara2.appendChild(text);
     document.getElementById("main-container").appendChild(newPara2);
+}
+
+function bloody() {
+    document.getElementById("blood").style.background= "red";
+    document.getElementById("blood").style.transform = "scale(1.5)";
+    document.getElementById("blood").style.transition = "all 2s";
 }
