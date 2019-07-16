@@ -3,22 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Haunted Puzzle</title>
+    <title>Haunted House Riddles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="server.js"></script>
-<!--    <script src="weather.js"></script>-->
+    <!--    <script src="weather.js"></script>-->
     <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 <header>
-    <h1>Haunted House Riddles</h1>
-        <button type="button" onclick="startOver()">Start Over</button>
+<!--        <img src="images/haunted-house.png" alt="haunted house logo">-->
+        <h1>Haunted House Riddles</h1>
+    <button type="button" onclick="startOver()">Start Over</button>
 </header>
 
 <body>
+     <img class="banner" src="images/house-banner.jpg" alt="creepy house">
     <div id="title-container"></div>
     <div id="main-container">
-    <p>To begin your customized haunted house riddle journey, enter a name and a zip code in the U.S. below.</p>
+        <p>To begin your customized haunted house riddle journey, enter a name and a zip code in the U.S. below.</p>
         <form>
             <label for="fname">Enter a First Name</label><br />
             <input type="text" name="fName" id="fName" onchange="bloody();" /><br />
@@ -28,7 +30,7 @@
         <button id="blood" class="button" type="button" onclick="levelOne();">Begin Level One</button>
     </div>
     <footer>
-       
+        <p>&#169; 2019 Haunted House Riddles</p>
     </footer>
 </body>
 

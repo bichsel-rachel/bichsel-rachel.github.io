@@ -46,10 +46,18 @@ function levelOne() {
     
      //clear previous code
     document.getElementById("main-container").innerHTML = "";
+    
     var newPara = document.createElement("p");
-    var text = document.createTextNode('The sky is ' + user.cityDesc + '  in ' + user.cityName + '. ' + user.fName + ' is walking down the street when a door randomly opens in a nearby old house. An old lady calls out and asks if ' + user.fName + ' can help her for one minute. Being such a good person, ' + user.fName + ' quickly walks into the house to assist the woman. Right as ' + user.fName + ' steps in, the door closes and totals blackness is all that can be seen. A low laugher erupted behind, "You can only get out if you solve my three puzzles. If not, you are stuck here forever!!"');
+    newPara.setAttribute("class", "p-left");
+    var text = document.createTextNode('The sky is ' + user.cityDesc + '  in ' + user.cityName + '. ' + user.fName + ' is walking down the street when a door randomly opens in a nearby old house. An old lady calls out and asks if ' + user.fName + ' can help her for one minute. Being such a good person, ' + user.fName + ' quickly walks into the house to assist the woman.');
     newPara.appendChild(text);
     document.getElementById("main-container").appendChild(newPara);
+    
+    var newPara2 = document.createElement("p");
+    newPara2.setAttribute("class", "p-left");
+    var text = document.createTextNode('Right as ' + user.fName + ' steps in, the door closes and totals blackness is all that can be seen. A low laugher erupted behind, "You can only get out if you solve my three puzzles. If not, you are stuck here forever!!"');
+    newPara2.appendChild(text);
+    document.getElementById("main-container").appendChild(newPara2);
 
     var header = document.createElement("h1");
     var headText = document.createTextNode("Riddle #1");
@@ -125,6 +133,7 @@ function levelTwo() {
     
      var newPara = document.createElement("p");
     var text = document.createTextNode("Say my name and I disappear. What am I?");
+    newPara.setAttribute("class", "p-left");
     newPara.appendChild(text);
     document.getElementById("main-container").appendChild(newPara);
     
