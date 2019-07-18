@@ -11,16 +11,21 @@
 
 </head>
 <header>
-<!--        <img src="images/haunted-house.png" alt="haunted house logo">-->
-        <h1>Haunted House Riddles</h1>
+    <!--        <img src="images/haunted-house.png" alt="haunted house logo">-->
+    <h1>Haunted House Riddles</h1>
     <button type="button" onclick="startOver()">Start Over</button>
 </header>
 
 <body>
-     <img class="banner" src="images/house-banner.jpg" alt="creepy house">
+    <img class="banner" src="images/house-banner.jpg" alt="creepy house">
     <div id="title-container"></div>
     <div id="main-container">
-        <p>To begin your customized haunted house riddle journey, enter a name and a zip code in the U.S. below.</p>
+       
+        <p>To begin your customized haunted house riddle journey, enter a name and a zip code in the U.S. below. Hit play to add suspenseful music to set the tone.</p>
+        
+         <audio controls autoplay loop>
+  <source src="intro.m4a" type="audio/mpeg" autoplay>
+</audio>
         <form>
             <label for="fname">Enter a First Name</label><br />
             <input type="text" name="fName" id="fName" onchange="bloody();" /><br />
