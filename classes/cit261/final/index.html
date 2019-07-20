@@ -13,7 +13,7 @@
 <header>
     <!--        <img src="images/haunted-house.png" alt="haunted house logo">-->
     <h1>Haunted House Riddles</h1>
-    <button type="button" onclick="startOver()">Start Over</button>
+    <button type="button" onclick="startOver()" id="start-over">Start Over</button>
 </header>
 
 <body>
@@ -27,12 +27,12 @@
   <source src="intro.m4a" type="audio/mpeg" autoplay>
 </audio>
         <form>
-            <label for="fname">Enter a First Name</label><br />
+            <label for="fname" class="text">Enter a First Name</label><br />
             <input type="text" name="fName" id="fName" onchange="bloody();" /><br />
-            <label for="zipCode">Enter a Zip Code in the United States</label><br />
-            <input type="text" name="zipCode" id="zipCode" /><br />
+            <label for="zipCode" class="text" id="zipCode">Zip Code</label><br />
+            <input type="text" name="zipCode" /><br />
         </form>
-        <button id="blood" class="button" type="button" onclick="levelOne();">Begin Level One</button>
+        <button id="blood" class="continue-button button" type="button" onclick="levelOne();">Begin Level One</button>
     </div>
     <footer>
         <p>&#169; 2019 Haunted House Riddles</p>

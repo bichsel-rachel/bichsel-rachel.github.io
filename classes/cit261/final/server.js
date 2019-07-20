@@ -1,14 +1,9 @@
-document.addEventListener('click', musicPlay);
-function musicPlay() {
-    document.getElementById('ID').play();
-    document.removeEventListener('click', musicPlay);
-}
-
 //Go back to Level One
 function startOver() {
     sessionStorage.clear();
-    var input = '<form><label for="fname">Enter a First Name</label><br /><input type="text" name="fName"/><br /><label for="zipCode">Enter a Zip Code in the United States</label><br /><input type="text" name="zipCode"/><button type="button" onclick="start()">Begin</button></form>';
-    document.getElementById("main-container").innerHTML = input;
+    window.location.replace("https://bichsel-rachel.github.io/classes/cit261/final/index.html");
+//    var input = '<form><label for="fname">Enter a First Name</label><br /><input type="text" name="fName"/><br /><label for="zipCode">Enter a Zip Code in the United States</label><br /><input type="text" name="zipCode"/><button type="button" onclick="start()">Begin</button></form>';
+//    document.getElementById("main-container").innerHTML = input;
 }
 
 //precede to Level One
@@ -96,6 +91,7 @@ function levelOne() {
 
     var hintButton = document.createElement("button");
     hintButton.setAttribute("type", "button");
+     hintButton.setAttribute("class", "hint-button");
     hintButton.setAttribute("onclick", 'hintOne()');
     var buttonText = document.createTextNode('Hint');
     hintButton.appendChild(buttonText);
@@ -116,6 +112,7 @@ function testAnswer(answer) {
         var nextLevel = document.createElement("button");
         nextLevel.setAttribute("type", "button");
         nextLevel.setAttribute("onclick", "levelTwo()");
+        nextLevel.setAttribute("class", "continue-button");
         var buttonText = document.createTextNode('Contine to Level 2');
         nextLevel.appendChild(buttonText);
         document.getElementById("main-container").appendChild(nextLevel);
@@ -162,6 +159,8 @@ function levelTwo() {
 
     var hintButton = document.createElement("button");
     hintButton.setAttribute("type", "button");
+     hintButton.setAttribute("class", "hint-button");
+    hintButton.se
     hintButton.setAttribute("onclick", 'hintTwo()');
     var buttonText = document.createTextNode('Hint');
     hintButton.appendChild(buttonText);
@@ -181,6 +180,7 @@ function testAnswerTwo(answer) {
         var nextLevel = document.createElement("button");
         nextLevel.setAttribute("type", "button");
         nextLevel.setAttribute("onclick", "levelThree()");
+         nextLevel.setAttribute("class", "continue-button");
         var buttonText = document.createTextNode('Contine to Level 3');
         nextLevel.appendChild(buttonText);
         document.getElementById("main-container").appendChild(nextLevel);
@@ -229,6 +229,8 @@ function levelThree() {
 
     var hintButton = document.createElement("button");
     hintButton.setAttribute("type", "button");
+     hintButton.setAttribute("class", "hint-button");
+    hintButton.se
     hintButton.setAttribute("onclick", 'hintThree()');
     var buttonText = document.createTextNode('Hint');
     hintButton.appendChild(buttonText);
@@ -248,6 +250,7 @@ function testAnswerThree(answer) {
         var nextLevel = document.createElement("button");
         nextLevel.setAttribute("type", "button");
         nextLevel.setAttribute("onclick", "final()");
+         nextLevel.setAttribute("id", "escape");
         var buttonText = document.createTextNode('Escape!');
         nextLevel.appendChild(buttonText);
         document.getElementById("main-container").appendChild(nextLevel);

@@ -5,8 +5,9 @@ body {
     text-align: center;
 }
 
-p {
-    font-size: 1.2em; 
+p,
+.text {
+    font-size: 1.3em;
 }
 
 header {
@@ -14,26 +15,35 @@ header {
     padding: 15px;
 }
 
-#head-container{
+#head-container {
     display: flex;
+}
+
+#fName {
+    margin-bottom: 10px;
 }
 
 .banner {
     width: 100%;
 }
+
 footer {
     background-color: black;
     padding: 15px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
-h1{
+footer p {
+   font-size: 1em; 
+}
+
+h1 {
     margin-top: 10px;
     font-size: 30px;
 }
 
 .button {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #main-container {
@@ -52,6 +62,62 @@ h1{
 }
 
 @keyframes stickman {
-    0% {left: 0px;}
-    100% {left: 100px;}
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 100px;
+    }
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myForm button, #start-over {
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.hint-button {
+    background-color: clear;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.continue-button {
+   background-color: clear;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#escape {
+    background-color: red;
 }
