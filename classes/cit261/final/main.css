@@ -23,6 +23,10 @@ header {
     margin-bottom: 10px;
 }
 
+audio {
+    margin-bottom: 20px;
+}
+
 .banner {
     width: 100%;
 }
@@ -30,7 +34,7 @@ header {
 footer {
     background-color: black;
     padding: 15px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 footer p {

@@ -10,6 +10,7 @@ function startOver() {
 function levelOne() {
 
     var fName = document.getElementById('fName').value;
+    
     var zip = document.getElementById('zipCode').value;
 
     var requestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=' + zip + ',us&units=imperial&APPID=0a745dde654e210f2ff1f4a49e707afa';
