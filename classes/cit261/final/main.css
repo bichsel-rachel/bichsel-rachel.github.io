@@ -124,4 +124,6 @@ h1 {
 
 #escape {
     background-color: red;
+    font-size: 1em;
+    padding: 5px 10px;
 }
