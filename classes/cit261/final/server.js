@@ -296,6 +296,7 @@ function final() {
 
     var startOver = document.createElement("a");
     startOver.setAttribute("href", "https://bichsel-rachel.github.io/classes/cit261/final/index.html");
+    startOver.setAttribute("id", "play-again");
     var linkText = document.createTextNode('Play Again');
     startOver.appendChild(linkText);
     document.getElementById("main-container").appendChild(startOver);
