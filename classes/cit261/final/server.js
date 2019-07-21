@@ -67,7 +67,8 @@ function levelOne() {
     document.getElementById("main-container").appendChild(header);
 
     var newPara2 = document.createElement("p");
-    var text2 = document.createTextNode('What can travel around the world while staying in a corner?');
+    var text2 = document.createTextNode("What can travel around the world while staying in a corner? (don't include 'a' in answer)");
+    newPara2.setAttribute("class", "p-left");
     newPara2.appendChild(text2);
     document.getElementById("main-container").appendChild(newPara2);
 
@@ -205,7 +206,8 @@ function levelThree() {
     document.getElementById("main-container").appendChild(header);
 
     var newPara = document.createElement("p");
-    var text = document.createTextNode("The one who makes it always sells it. The one who buys it never uses it. The one who uses it never knows he's using it. What is it?");
+    var text = document.createTextNode("The one who makes it always sells it. The one who buys it never uses it. The one who uses it never knows he's using it. What is it? (don't include 'a' in answer)");
+    newPara.setAttribute("class", "p-left");
     newPara.appendChild(text);
     document.getElementById("main-container").appendChild(newPara);
 

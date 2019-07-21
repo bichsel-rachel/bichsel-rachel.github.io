@@ -38,7 +38,7 @@ footer {
 }
 
 footer p {
-   font-size: 1em; 
+    font-size: 1em;
 }
 
 h1 {
@@ -61,13 +61,13 @@ h1 {
 
 #running {
     position: relative;
-    animation: stickman 1s;
+    animation: stickman 1.5s;
     animation-fill-mode: forwards;
 }
 
 @keyframes stickman {
     0% {
-        left: 0px;
+        left: -100px;
     }
     100% {
         left: 100px;
@@ -83,7 +83,8 @@ h1 {
     margin-right: auto;
 }
 
-#myForm button, #start-over {
+#myForm button,
+#start-over {
     background-color: yellow;
     border: none;
     color: black;
@@ -111,7 +112,7 @@ h1 {
 }
 
 .continue-button {
-   background-color: lightgray;
+    background-color: lightgray;
     border: none;
     color: black;
     font-weight: bold;
@@ -126,10 +127,11 @@ h1 {
     background-color: red;
     font-size: 1em;
     padding: 5px 10px;
+    font-weight: bold;
 }
-    
-    #play-again {
-         background-color: yellow;
+
+#play-again {
+    background-color: yellow;
     border: none;
     color: black;
     font-weight: bold;
