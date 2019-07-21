@@ -99,7 +99,7 @@ h1 {
 
 
 .hint-button {
-    background-color: clear;
+    background-color: lightgray;
     border: none;
     color: black;
     font-weight: bold;
@@ -111,7 +111,7 @@ h1 {
 }
 
 .continue-button {
-   background-color: clear;
+   background-color: lightgray;
     border: none;
     color: black;
     font-weight: bold;
