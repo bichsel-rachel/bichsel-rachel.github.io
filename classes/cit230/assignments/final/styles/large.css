@@ -1,0 +1,142 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+   
+
+    header .flex-item2 {
+        justify-content: center;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    .bannerpic {
+        margin: auto; 
+    }
+    article p.town-article img {
+        width: 29.333%;
+    }
+
+    .summary {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .highlow {
+        flex: 1;
+    }
+    .conditions {
+        flex: 2;
+    }
+    .current {
+        flex: 2;
+        max-width: 80%;
+        padding: .5em;
+    }
+
+
+    nav ul {
+        text-align: center;
+        width: 100%;
+        display: inline;
+        margin-left: 16%;
+    }
+    nav ul li a {
+        display: block;
+        padding: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        color: white;
+        width: 100%;
+        font-size: 1em;
+
+    }
+    nav ul li a {
+        padding: .7rem 3rem;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .container1 {
+        display: flex;
+        padding-top: 1em;
+        
+    }
+    
+    .reliableText {
+        padding: 1em;
+    }
+     
+   
+    /***Contact***/
+    .contactContainer {
+        display:flex;
+    }
+    
+    .contactContainer .container {
+        padding-left: 3em;
+        width: 100%;
+    }
+
+    
+    input.contactBtn {
+        -webkit-appearance: none;
+    color: #fff;
+    border-radius: 7px;
+    width: 35%;
+    margin-left: 32%;
+    font-size: 1em;
+    padding: 1em;
+    background-color: olivedrab;
+    box-shadow: 4px 4px 10px #111;
+    display: flex;
+    justify-content: center;
+     
+    }
+    
+    iframe {
+       margin-left: 10%;
+        width: 50%;
+    }
+    
+    /****Tours****/
+.right, .left { padding-right:1em;
+        padding-left: 1em;
+        flex: 1;
+        margin: 1em;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    
+    /****Events****/
+    fieldset {
+        max-width: 50%;
+        margin-left: 25%; 
+    }
+    
+    legend {
+        text-align: center;
+    }
+    
+    input.submitBtn {
+        margin-left: 40%;
+    }
+    
+/*****Sales*****/
+    .container2 {
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+    }
+    #salesPic {
+       width: 40%;
+    margin-right: 10%;
+    }
+    
+    #accordian {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    
+}

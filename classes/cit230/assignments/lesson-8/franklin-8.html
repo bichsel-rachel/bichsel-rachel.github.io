@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Outlook | Franklin</title>
+    <meta name="author" content="Rachel Bichsel">
+    <meta name="description" content="weather forecast for three cities">
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Suez+One" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-8.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-8.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-8.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <div class="flex-item1">
+            <img src="images/images.png" alt="The site logo" width="100"></div>
+
+        <div class="flex-item2">
+            <h1>Weather Outlook</h1>
+            <div class="subheading">Being Prepared Matters</div>
+        </div>
+
+    </header>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+
+    <nav>
+        <ul id="navigation" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="franklin-7.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>The City of Franklin</h2>
+        <figure>
+            <img src="images/franklin-original%20(1).jpeg" alt="hearding cattle" srcset="images/franklin-small.jpg 1x, images/franklin-medium.jpg 2x, images/franklin-large.jpg 3x">
+        </figure>
+        <h3>Weather Summary</h3>
+        <section class="summary">
+
+            <div class="current">
+                <picture>
+                    <img class="current" src="images/cartoon-sunshine-clipart-7.jpg" width="200" alt="sun">
+                </picture>
+                <br/>
+                <strong class="currentweather">Sunny</strong>
+            </div>
+
+            <div class="highlow">
+                <p>High:<strong> 90&deg;F</strong></p>
+                <p>Low:<strong> 75&deg;F</strong></p>
+            </div>
+
+            <div class="conditions">
+                <p>Precipitation: <strong> 5%</strong></p>
+                <p>Wind Speed: <strong>5 mph</strong></p>
+                <p>Today's Windchill: <strong><span id="windchill"></span></strong></p>
+            </div>
+
+        </section>
+
+        <div class="clearfix"></div>
+        <h3>10 Day Forecast</h3>
+        <section class="forecast">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article class="article-container">
+
+            <div class="article-pic">
+                <img src="images/field-thunderstorm-rainy-meadow.jpg" alt="Rainy road" width="400"></div>
+            <div class="town-article">
+                <h3> Franklin Breaks Record</h3>
+                <p>
+
+                    Franklin has seen record breaking amounts of water. This is from a combination of snow melting and then spring rains. Authorities warn people to be careful as they are driving through the back roads. There have already been ten cars that had to be pulled out of deep mud. Please look at the weather and if it has rained a lot, use main roads or wait. It's not worth it. Despite the cars getting stuck, farmers are really excited for the large amounts of water to help their produce grow.
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            Weather Outlook <br> 123 Main St. <br> Franklin, MU 83454 <br> 999-999-999 <br> contact@weatheroutlook.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Outlook | <span id="currentdate">
+            </span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

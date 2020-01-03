@@ -1,0 +1,109 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header {
+        padding-left: 25%;
+        padding-right: 20%;
+    }
+    header .flex-item1 {
+        flex: 3;
+        
+    }
+
+    header .flex-item2 {
+        flex: 15;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    
+    .bannerpic {
+        margin: auto; 
+    }
+    article p.town-article img {
+        width: 29.333%;
+    }
+
+    .summary {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .highlow {
+        flex: 1;
+    }
+    .conditions {
+        flex: 2;
+    }
+    .current {
+        flex: 2;
+        max-width: 80%;
+        padding: .5em;
+    }
+
+
+    nav ul {
+        padding: .5em;
+        text-align: center;
+        width: 100%;
+        display: inherit;
+    }
+    nav ul li a {
+        display: block;
+        padding: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        color: white;
+        width: 100%;
+        font-size: 1em;
+
+    }
+    nav ul li a {
+        padding: .7rem 3rem;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .article-container {}
+
+    .town-article {
+        text-align: left;
+    }
+    
+     .article-pic {
+     
+    }
+    /********Gallery*******/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure img:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+
+    /******Storm Center******/
+    form {
+        max-width: 70%;
+    }
+
+   /*****Home Page******/
+    #town-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+
+    }
+
+    
+
+    #town-info article {
+        width: 33%;
+        margin: .8em;
+    }
+#town-info img {
+    max-width: 100%;
+    margin-left: 8%;
+}
+}

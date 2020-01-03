@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Outlook | Storm Center</title>
+
+    <meta name="author" content="Rachel Bichsel">
+
+    <meta name="description" content="weather forecast for three cities">
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Suez+One" rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+
+    <link href="styles/main-8.css" rel="stylesheet">
+
+    <link href="styles/medium-8.css" rel="stylesheet">
+
+    <link href="styles/large-8.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="flex-item1">
+            <img src="images/images.png" alt="The site logo" width="100"></div>
+
+        <div class="flex-item2">
+            <h1>Weather Outlook</h1>
+            <div class="subheading">Being Prepared Matters</div>
+        </div>
+
+    </header>
+
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+
+                <label><span>Full Name <abbr title="This field is mandatory">*</abbr>:</span><input name="name" type="text" value="" placeholder="John Doe" pattern="[a-zA-z -._]{3,50}" required></label>
+
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com"></label>
+
+                <label><span>Phone:</span><input name="phone" type="tell" placeholder="5554445555" pattern="[0-9]{10, 20}"></label>
+
+                <label><span>Zip Code <abbr title="This field is mandatory">*</abbr>:</span><input name="zipcode" type="number" value="" placeholder="83402" pattern="[0-9]{5}" required></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><span>Storm Information</span></legend>
+
+
+                <label><span>Storm Type</span><input list="storm-types"></label>
+
+                <datalist id="storm-types">
+                    <option value="Rain"></option>
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Tornado"></option>
+                    <option value="Snow"></option>
+                    <option value="Lighning"></option> 
+            </datalist>
+
+                <label><span>Storm Severity: </span><input type="range" name="severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="severityvalue">5</span><br></label>
+
+                <label><span>User in-Danger Level</span><input name="danger" type="radio" value="Yes"> Yes <br>
+                <input name="danger" type="radio" value="No">No <br>
+                <input name="danger" type="radio" value="Maybe">Maybe <br></label>
+
+                <label><span>Storm Region</span>
+                <select name="region">
+                <option value="select" disabled>Select Region...</option>
+                    <option value="region">Franklin</option>
+                    <option value="region">Greenville</option>
+                    <option value="region">Springfield</option>
+                    </select></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><span>Additional Information or Comments</span></legend>
+                <textarea name="comments" rows="10" cols="40"></textarea>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Submit" class="submitBtn">
+            <input type="hidden" name="redirect" value="thanks.html">
+
+        </form>
+    </main>
+    <footer>
+        <aside>
+            Weather Outlook <br> 123 Main St. <br> Franklin, MU 83454 <br> 999-999-999 <br> contact@weatheroutlook.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Outlook | <span id="currentdate">
+            </span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/storm-severity.js"></script>
+</body>
+
+</html>

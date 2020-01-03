@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Outlook | Form Submitted</title>
+
+    <meta name="author" content="Rachel Bichsel">
+
+    <meta name="description" content="weather forecast for three cities">
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Suez+One" rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+
+    <link href="styles/main-9.css" rel="stylesheet">
+
+    <link href="styles/medium-9.css" rel="stylesheet">
+
+    <link href="styles/large-9.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="flex-item1">
+            <img src="images/images2.png" alt="The site logo" width="100"></div>
+
+        <div class="flex-item2">
+            <h1>Weather Outlook</h1>
+            <div class="subheading">Being Prepared Matters</div>
+        </div>
+
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul id="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="fromsubmit">
+        <h2>Thanks!</h2>
+        <p>We appreciate you taking the time to contribute to our Storm Center.</p>
+    </main>
+    <footer>
+        <aside>
+            Weather Outlook <br> 123 Main St. <br> Franklin, MU 83454 <br> 999-999-999 <br> contact@weatheroutlook.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Outlook | <span id="currentdate">
+            </span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/storm-severity.js"></script>
+</body>
+
+</html>

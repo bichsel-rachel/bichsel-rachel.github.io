@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+body,
+input.submitBtn {
+    font-size: 16px;
+    font-family: 'Noto Sans', 'Georgia', sans-serif;
+}
+
+
+.footer-bar {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+aside {
+    font-family: 'Stoke', serif;
+}
+
+
+nav,
+main,
+footer {
+    text-align: center;
+
+}
+
+main {
+    margin: 2em;
+    margin-top: 0;
+}
+
+.bar {
+    height: 1em;
+    background-color: #69306d;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    background-color:#8d8d92;
+
+}
+
+#logo{
+    margin: 1em;
+}
+
+
+/*****Navigation******/
+
+.hamburger {
+    display: flex;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+nav {
+
+    align-content: stretch;
+    background-color: #69306d;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: flex;
+    padding: .9rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: olivedrab;
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+h2,
+h3 {
+    font-size: 24px;
+}
+
+
+main h2 {
+    text-align: center;
+    font-size: 33px;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+}
+
+main figure img {
+    max-width: 100%;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    max-width: 650px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+}
+
+th {
+    background-color: 	#6B8E23;
+}
+
+footer {
+    text-align: center;
+}
+
+footer aside {
+    margin: 0;
+    padding: .5rem;
+    font-size: 14px;
+    background-color: #8d8d92;
+}
+
+footer > p {
+    background-color: #69306d;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.video{
+    color: white; 
+}
+
+
+/**Sales**/
+
+
+#accordian ul { 
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+line-height: 1;
+position: relative;}
+
+#accordian {
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    color: white;
+    box-shadow: 5px 7px 5px grey;
+    
+
+}
+
+#accordian h3 {
+    font-size: 1.3em; 
+    cursor: pointer;
+}
+
+#accordian h3:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#accordian ul li {
+    background-color: olivedrab;
+    height: 60%;
+    border: 1px solid black;
+    
+}
+
+/***Events***/
+abbr {color:red}
+
+fieldset{
+  background-color: white;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: black solid 2px; 
+    text-align: left;
+    max-width: 80%;
+    
+}
+
+legend {
+    color: white;
+    font-weight:200;
+    padding: .5em;
+    background-color: #69306d;
+    border-radius: .5em;;  
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display:block;
+    font-size: 1em;
+    color: black;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    -webkit-appearance: none;
+    color: #fff;
+    border-radius: 7px;
+    width: 20%;
+    margin: .5em 0 1em;
+    font-size: 1em;
+    padding: .6em;
+    background-color: olivedrab;
+    box-shadow: 4px 4px 10px #111;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+textarea{
+    margin: 1em;
+}
+
+/*****Tours******/
+#headerTours {
+    background-color: #69306d; 
+    color: white;
+    padding: .3em;
+    margin: 0; 
+}
+
+.right, .left {
+    border: 5px solid olivedrab;
+    margin: 1em;
+}
+
+ /****Contact Us****/
+    input.contactBtn {
+        -webkit-appearance: none;
+    color: #fff;
+    border-radius: 7px;
+    width: 20%;
+    margin: 1em;
+    font-size: 1em;
+    padding: .6em;
+    background-color: olivedrab;
+    box-shadow: 4px 4px 10px #111;
+    display: flex;
+    justify-content: center;
+     
+    }
+
+#resources {
+    text-align: left;
+    line-height: 2em;
+}

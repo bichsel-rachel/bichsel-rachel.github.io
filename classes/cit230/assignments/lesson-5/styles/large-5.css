@@ -1,0 +1,36 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 29.333%;
+    }
+
+    header {
+        margin: 0;
+        padding: .1px;
+        width: 100%;
+    }
+
+    header img {
+        float: none;
+        width: 9em;
+        margin-right: 450px;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 4em;
+        margin-top: -100px;
+        padding: 0;
+        margin-bottom: 0;
+        line-height: .8em;
+    }
+
+    header .subheading {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0;
+        padding-left: 3.5em;
+    }
+    
+    nav ul li a {padding: .6rem 1rem;}
+}

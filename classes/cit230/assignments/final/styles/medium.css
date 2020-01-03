@@ -1,0 +1,66 @@
+@media only screen and (min-width: 37.5em) {
+
+    .hamburger {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: .9rem;
+
+    }
+
+    nav ul li {}
+    /********Sales*******/
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #accordian {
+        max-width: 400px;
+        margin-left: 27%;
+        margin-right: 27%;
+    }
+
+
+    #salesInfo {
+        padding: 1em;
+        text-align: left;
+    }
+    
+    
+    /*******tours*******/
+    #containerTours {
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+        
+    }
+
+    #containerTours h3 {
+        text-align: center;
+        padding: .5em 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+    .left, .right {
+        padding: 1em;
+    }
+    /*****Events*****/
+    #eventInfo {
+        text-align:left;
+    }
+}

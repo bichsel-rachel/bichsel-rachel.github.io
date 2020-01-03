@@ -1,0 +1,89 @@
+@media only screen and (min-width: 37.5em){
+
+    header {
+    }
+    
+    nav {
+        margin: 1rem;
+        padding: 0;
+        background-color: #114e74;
+        width: auto;
+        
+    }
+
+    nav ul {
+        display:inherit;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: .8rem 1rem;
+        color: white;
+    }
+
+    nav ul li {
+        display: inline-block;
+        width: 15%;
+        margin-right:auto;
+        margin-left: auto;
+        
+    }
+    
+    nav .hamburger {
+        display: none;
+    }
+   
+    .highlow,
+    .conditions {
+        float: left;
+        width: 45%;
+        margin-left:%;
+    }
+
+    .current {
+        float: right;
+        margin-right: 15%;
+        max-width: 80%;
+        padding: .5em;
+    }
+    .currentweather {
+    margin-right: 2.5em;
+    }
+
+
+    section.forecast {
+        display: block;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article img {
+        width: 62.666%;
+    }
+    /* responsive images */
+    .town-article {
+        width: 45%;
+        margin-right: 3%;
+        float: right;
+        text-align: left;
+    }
+    .article-pic {
+        width: 42%;
+        float: left;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    header {
+        margin: 0;
+        padding: .1px;
+    }
+
+    header h1 {
+        text-align: left;
+        margin-left: 3.5em;
+    }
+
+    header .subheading {
+        text-align: left;
+        margin-left: 11em;
+    }
+}

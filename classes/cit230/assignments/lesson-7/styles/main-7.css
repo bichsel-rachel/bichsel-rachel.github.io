@@ -1,0 +1,189 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.footer-bar {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+aside {
+    font-family: 'Suez One', serif;
+}
+
+header,
+nav,
+main,
+footer {
+    text-align: center;
+    @media only screen and (min-width: 37.5em)/* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.25rem;
+    padding: .8rem;
+
+}
+
+header .flex-item1 {
+    flex: 1;
+}
+
+header .flex-item2 {
+    flex: 3;
+}
+/*****Navigation******/
+
+
+nav {
+    
+    align-content: stretch;
+    background-color:  #114e74;
+}
+
+#navigation {
+    display: none;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.hamburger {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 14px;
+    padding: .5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: orange;
+}
+
+
+
+h2,
+h3 {
+    font-size: 24px;
+}
+
+
+main h2 {
+    text-align: center;
+    font-size: 33px;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+}
+
+main figure img {
+    max-width: 100%;
+}
+
+article {}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+    padding: 10px;
+    margin: auto;
+}
+
+th {
+    background-color: orange;
+}
+
+.forecast {
+    display: none;
+}
+
+.current {
+    margin: auto;
+
+    max-width: 60%;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    max-width: 100%;
+    /* fill the page in the small/phone view */
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer aside {
+    margin: 0;
+    padding: .5rem;
+    background-color: #4ecdc4;
+}
+
+footer > p {
+    background-color: #114e74;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/********Gallery Page**********/
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+}

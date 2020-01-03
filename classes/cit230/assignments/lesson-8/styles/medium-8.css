@@ -1,0 +1,107 @@
+@media only screen and (min-width: 37.5em) {
+
+    
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav {
+        margin: 2em;
+        padding: .3em;
+        background-color: #114e74;
+        
+    }
+
+    
+    nav ul li {
+        width: 100%;
+
+    }
+    nav ul li a {
+        padding: .3rem 2%;
+        color: white;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+    .summary {
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+    }
+
+    .highlow {
+        flex: 1;
+        text-align: left;
+    }
+    .conditions {
+        flex: 1;
+        text-align: left;
+    }
+    .current {
+        flex: 2;
+        max-width: 80%;
+        padding: .5em;
+    }
+
+
+    section.forecast {
+        display: flex;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article img {
+        width: 62.666%;
+    }
+    /* responsive images */
+    .article-container {
+        display: flex;
+    }
+    .town-article {
+        flex: 1;
+        width: 45%;
+        margin-right: 3%;
+
+    }
+    .article-pic {
+        flex: 1;
+        width: 42%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    header {
+        padding-right: 20%;
+        padding-left: 10%;
+        justify-content: flex-start;
+    }
+
+    header .flex-item1 {
+        flex: 1;
+    }
+
+    header .flex-item2 {
+        flex: 3;
+    }
+
+    /*********Gallery********/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em 2em;
+    }
+
+    .grid-container > li {
+        flex: 1;
+    }
+    /*****Storm Center*******/
+    
+    textarea {
+        text-align: left;
+    }
+}
